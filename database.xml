@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Database version="301" cloud="True">
+  <Package id="74ti03af6zrwxyb0_21a2_11" name="RLD_74TI0_21A2_11" description="Realtek LAN Driver - Win11">
+    <FileName>74ti03af6zrwxyb0_21a2_11_2_.xml</FileName>
+    <Version>10.50.511.2021</Version>
+    <ReleaseDate>01/12/2021</ReleaseDate>
+    <Size>923296</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti03af6zrwxyb0_21a2_11\74ti03af6zrwxyb0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="dislink1112757" name="USBDISPLAY_HLUD0_RS" description="Generic DisplayLink Driver for USB Docks and Adapters - 10 (1607 or Later)/11 (21H2 or Later)">
+    <FileName>dislink1112757_2_.xml</FileName>
+    <Version>11.1.2757.0</Version>
+    <ReleaseDate>04/09/2023</ReleaseDate>
+    <Size>48092653</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\dislink1112757\dislink1112757_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+      <System mtm="81YM" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="ofln0d0f40m8a0_21a2_11" name="ITS_OFLN0_21A2_11" description="Lenovo Notebook ITS Driver - Win11">
+    <FileName>ofln0d0f40m8a0_21a2_11_2_.xml</FileName>
+    <Version>4.1.1.0</Version>
+    <ReleaseDate>02/12/2021</ReleaseDate>
+    <Size>1892768</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\ofln0d0f40m8a0_21a2_11\ofln0d0f40m8a0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74tw05afmp86lac0_21a2_11" name="WLAN_74TW0_21A2_11" description="Intel WLAN Driver - Win11">
+    <FileName>74tw05afmp86lac0_21a2_11_2_.xml</FileName>
+    <Version>22.130.0.5</Version>
+    <ReleaseDate>19/08/2022</ReleaseDate>
+    <Size>7503776</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74tw05afmp86lac0_21a2_11\74tw05afmp86lac0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74tb05afxxvpmac0_21a2_11" name="BT_74TB0_21A2_11" description="Intel Bluetooth Driver - Win11">
+    <FileName>74tb05afxxvpmac0_21a2_11_2_.xml</FileName>
+    <Version>22.130.0.2</Version>
+    <ReleaseDate>19/08/2022</ReleaseDate>
+    <Size>1149288</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74tb05afxxvpmac0_21a2_11\74tb05afxxvpmac0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti020fsyr1nyc0_21a2_11" name="CHIPSET_74TI0_21A1_11" description="AMD Chipset drivers - Win11">
+    <FileName>74ti020fsyr1nyc0_21a2_11_2_.xml</FileName>
+    <Version>5.12.0.38</Version>
+    <ReleaseDate>01/12/2021</ReleaseDate>
+    <Size>1052040</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti020fsyr1nyc0_21a2_11\74ti020fsyr1nyc0_21a2_11_2_.xml</LocalPath>
+    <Severity>Optional</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="usbcg2dkfw1120_2" name="FWU_USB-C2_WLDCG" description="ThinkPad USB-C Dock Gen2 FW Package - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>usbcg2dkfw1120_2_2_.xml</FileName>
+    <Version>1.1.20</Version>
+    <ReleaseDate>16/03/2023</ReleaseDate>
+    <Size>46095523</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\usbcg2dkfw1120_2\usbcg2dkfw1120_2_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="hfcn37ww" name="BIOS_HFCN" description="BIOS Update Utility - 10/11">
+    <FileName>hfcn37ww_2_.xml</FileName>
+    <Version>HFCN37WW</Version>
+    <ReleaseDate>26/10/2023</ReleaseDate>
+    <Size>13734837</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\hfcn37ww\hfcn37ww_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti05afrvqh0yb0_21a2_11" name="AUD_74TI0_21A2_11" description="Realtek Audio Driver - Win11">
+    <FileName>74ti05afrvqh0yb0_21a2_11_2_.xml</FileName>
+    <Version>6.0.9341.1</Version>
+    <ReleaseDate>11/05/2023</ReleaseDate>
+    <Size>96143256</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti05afrvqh0yb0_21a2_11\74ti05afrvqh0yb0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="tbtesdkfw1014_1" name="FWU_TBTES" description="Lenovo Thunderbolt 3 Essential Dock Firmware Update Tool - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>tbtesdkfw1014_1_2_.xml</FileName>
+    <Version>v1.0.14</Version>
+    <ReleaseDate>10/02/2022</ReleaseDate>
+    <Size>5282971</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\tbtesdkfw1014_1\tbtesdkfw1014_1_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="usbcsmdkfw3156_2" name="FWU_USBCSM_DK" description="ThinkPad Universal USB-C Smart Dock FW Package - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>usbcsmdkfw3156_2_2_.xml</FileName>
+    <Version>3.1.56</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>3310768</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\usbcsmdkfw3156_2\usbcsmdkfw3156_2_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti08af0karrxb0_21a2_11" name="AVGA_74TI0_21A2_11" description="AMD VGA Driver - Win11">
+    <FileName>74ti08af0karrxb0_21a2_11_2_.xml</FileName>
+    <Version>30.0.13044.0</Version>
+    <ReleaseDate>31/10/2022</ReleaseDate>
+    <Size>199283048</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti08af0karrxb0_21a2_11\74ti08af0karrxb0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="b0tg040fjdvv6sc0_21a2_11" name="NVGA_GFE_B0TG0_21A2_11" description="NVIDIA GeForce Experience - Win11">
+    <FileName>b0tg040fjdvv6sc0_21a2_11_2_.xml</FileName>
+    <Version>3.25.1.27</Version>
+    <ReleaseDate>18/10/2022</ReleaseDate>
+    <Size>159231192</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\b0tg040fjdvv6sc0_21a2_11\b0tg040fjdvv6sc0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="b0tv040f8z854sc0_21a2_11" name="NVD_B0TV030_21A2_11" description="NVIDIA VGA Driver - Win11">
+    <FileName>b0tv040f8z854sc0_21a2_11_2_.xml</FileName>
+    <Version>31.0.15.1654</Version>
+    <ReleaseDate>18/10/2022</ReleaseDate>
+    <Size>667902680</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\b0tv040f8z854sc0_21a2_11\b0tv040f8z854sc0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti0eafna7bvyb0_21a2_11" name="BT_74TI0_21A2_11" description="Bluetooth Driver - Win11">
+    <FileName>74ti0eafna7bvyb0_21a2_11_2_.xml</FileName>
+    <Version>10.0.0.1257/22.30.1.154/1.9.1046.3002</Version>
+    <ReleaseDate>18/10/2022</ReleaseDate>
+    <Size>2247544</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti0eafna7bvyb0_21a2_11\74ti0eafna7bvyb0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti04afkkxbyyb0_e_21a2_11" name="FP_74TI0_E_21A2_11" description="FingerPrint Driver - Win11">
+    <FileName>74ti04afkkxbyyb0_e_21a2_11_2_.xml</FileName>
+    <Version>3.4.12210.15801</Version>
+    <ReleaseDate>01/12/2021</ReleaseDate>
+    <Size>5145224</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti04afkkxbyyb0_e_21a2_11\74ti04afkkxbyyb0_e_21a2_11_2_.xml</LocalPath>
+    <Severity>Optional</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti04afe25bwyb0_b_21a2_11" name="CRD_74TI0_B_21A2_11" description="Cardreader Driver for Bayhub - Win11">
+    <FileName>74ti04afe25bwyb0_b_21a2_11_2_.xml</FileName>
+    <Version>2.1.101.10540</Version>
+    <ReleaseDate>24/02/2022</ReleaseDate>
+    <Size>2733184</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti04afe25bwyb0_b_21a2_11\74ti04afe25bwyb0_b_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti0fafzsu2uyb0_21a2_11" name="WLAN_74TI0_21A2_11" description="Wireless LAN Driver - Win11">
+    <FileName>74ti0fafzsu2uyb0_21a2_11_2_.xml</FileName>
+    <Version>12.0.0.1257/22.30.1.1339/2024.0.8.135/6001.0.10.340/6001.15.121.1</Version>
+    <ReleaseDate>18/10/2022</ReleaseDate>
+    <Size>9077128</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti0fafzsu2uyb0_21a2_11\74ti0fafzsu2uyb0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti04afkkxbyyb0_s_21a2_11" name="FP_74TI0_S_21A2_11" description="FingerPrint Driver - Win11">
+    <FileName>74ti04afkkxbyyb0_s_21a2_11_2_.xml</FileName>
+    <Version>6.0.506.1139</Version>
+    <ReleaseDate>01/12/2021</ReleaseDate>
+    <Size>5145224</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti04afkkxbyyb0_s_21a2_11\74ti04afkkxbyyb0_s_21a2_11_2_.xml</LocalPath>
+    <Severity>Optional</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="fhybd1038_1" name="FWU_HYBDOCK_FHYBD" description="ThinkPad Hybrid USB-C with USB-A Dock Firmware - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>fhybd1038_1_2_.xml</FileName>
+    <Version>V1.0.38</Version>
+    <ReleaseDate>01/11/2023</ReleaseDate>
+    <Size>6417992</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\fhybd1038_1\fhybd1038_1_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="01lf0aafar2w6jb0_21a2_11" name="FN_01LF0_21A2_11" description="Lenovo Fn and function keys - Win11">
+    <FileName>01lf0aafar2w6jb0_21a2_11_2_.xml</FileName>
+    <Version>2.0.0.25</Version>
+    <ReleaseDate>22/08/2022</ReleaseDate>
+    <Size>3239752</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\01lf0aafar2w6jb0_21a2_11\01lf0aafar2w6jb0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u3etn10w_2_w11_x86" name="USBC_U3ETN_W11_X86" description="Lenovo USB3.0 LAN Driver for Docks and Adapters - 11 (21H2 or Later)">
+    <FileName>u3etn10w_2_w11_x86_2_.xml</FileName>
+    <Version>11.13.0420.2023</Version>
+    <ReleaseDate>10/11/2023</ReleaseDate>
+    <Size>8335027</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u3etn10w_2_w11_x86\u3etn10w_2_w11_x86_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+      <System mtm="81YM" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti04afe25bwyb0_r_21a2_11" name="CRD_74TI0_R_21A2_11" description="Cardreader Driver for Realtek - Win11">
+    <FileName>74ti04afe25bwyb0_r_21a2_11_2_.xml</FileName>
+    <Version>10.0.22000.21350</Version>
+    <ReleaseDate>24/02/2022</ReleaseDate>
+    <Size>2733184</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti04afe25bwyb0_r_21a2_11\74ti04afe25bwyb0_r_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti06affh3ryxb0_21a2_11" name="CAM_74TI0_21A2_11" description="Camera Driver - Win11">
+    <FileName>74ti06affh3ryxb0_21a2_11_2_.xml</FileName>
+    <Version>5.0.18.121/10.13.19041.27/10.0.22000.20238</Version>
+    <ReleaseDate>19/08/2022</ReleaseDate>
+    <Size>67574744</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti06affh3ryxb0_21a2_11\74ti06affh3ryxb0_21a2_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="74ti04afkkxbyyb0_g_21a2_11" name="FP_74TI0_G_21A2-11" description="FingerPrint Driver - Win11">
+    <FileName>74ti04afkkxbyyb0_g_21a2_11_2_.xml</FileName>
+    <Version>3.1.581.610</Version>
+    <ReleaseDate>01/12/2021</ReleaseDate>
+    <Size>5145224</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\74ti04afkkxbyyb0_g_21a2_11\74ti04afkkxbyyb0_g_21a2_11_2_.xml</LocalPath>
+    <Severity>Optional</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="suhotfixww04" name="HOTFIX_TVSU_WIN11" description="Hotfix for Lenovo System Update - 11 (21H2 or Later)">
+    <FileName>suhotfixww04_2_.xml</FileName>
+    <Version>1.0.0.4</Version>
+    <ReleaseDate>15/10/2021</ReleaseDate>
+    <Size>1798584</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\suhotfixww04\suhotfixww04_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+      <System mtm="81YM" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="gqcn42ww" name="BIOS_GQCN" description="BIOS Update Utility - 10/11">
+    <FileName>gqcn42ww_2_.xml</FileName>
+    <Version>GQCN42WW</Version>
+    <ReleaseDate>26/10/2023</ReleaseDate>
+    <Size>13734837</Size>
+    <URL>https://download.lenovo.com/consumer/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\gqcn42ww\gqcn42ww_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="21A4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+</Database>
