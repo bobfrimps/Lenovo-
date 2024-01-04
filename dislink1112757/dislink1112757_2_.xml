@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="USBDISPLAY_HLUD0_RS" id="dislink1112757" version="11.1.2757.0" hide="False">
+  <Title default="EN">
+    <Desc id="EN">Generic DisplayLink Driver for USB Docks and Adapters - 10 (1607 or Later)/11 (21H2 or Later)</Desc>
+  </Title>
+  <DetectVersion type="Inf">
+    <_PnPID><![CDATA[USB\VID_17E9&PID_6015&MI_00]]></_PnPID>
+    <_PnPID><![CDATA[USB\VID_17E9&PID_434A&MI_00]]></_PnPID>
+    <_PnPID><![CDATA[USB\VID_17E9&PID_4311&MI_00]]></_PnPID>
+    <_PnPID><![CDATA[USB\VID_17E9&PID_4343&MI_00]]></_PnPID>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="1" />
+  <SeverityOverride type="2">
+    <Not>
+      <Or>
+        <_Driver>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_6015&MI_00]]></HardwareID>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_434A&MI_00]]></HardwareID>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_4311&MI_00]]></HardwareID>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_4343&MI_00]]></HardwareID>
+          <Version>0.1^</Version>
+        </_Driver>
+        <_Driver>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_6015&MI_02]]></HardwareID>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_434A&MI_02]]></HardwareID>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_4343&MI_02]]></HardwareID>
+          <Version>0.1^</Version>
+        </_Driver>
+      </Or>
+    </Not>
+  </SeverityOverride>
+  <Vendor>Lenovo</Vendor>
+  <ExtractCommand>dislink1112757.exe /VERYSILENT /DIR=%PACKAGEPATH% /EXTRACT="YES"</ExtractCommand>
+  <ReleaseDate>2023-09-04</ReleaseDate>
+  <DiskSpaceNeeded>137643456</DiskSpaceNeeded>
+  <Reboot type="3" />
+  <Brand type="2" />
+  <PackageType type="2" />
+  <Install rc="0" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\Setup.exe -silent</Cmdline>
+  </Install>
+  <ManualInstall type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\Setup.exe</Cmdline>
+  </ManualInstall>
+  <Uninstall />
+  <DetectInstall>
+    <Or>
+      <And>
+        <_Driver>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_6015&MI_00]]></HardwareID>
+          <Date>2023-06-28</Date>
+          <Version>11.1.2757.0^</Version>
+        </_Driver>
+        <_Driver>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_6015&MI_02]]></HardwareID>
+          <Date>2023-03-13</Date>
+          <Version>11.1.2611.0^</Version>
+        </_Driver>
+      </And>
+      <And>
+        <_Driver>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_434A&MI_00]]></HardwareID>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_4343&MI_00]]></HardwareID>
+          <Date>2023-06-28</Date>
+          <Version>11.1.2757.0^</Version>
+        </_Driver>
+        <_Driver>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_434A&MI_02]]></HardwareID>
+          <HardwareID><![CDATA[USB\VID_17E9&PID_4343&MI_02]]></HardwareID>
+          <Date>2023-03-13</Date>
+          <Version>11.1.2611.0^</Version>
+        </_Driver>
+      </And>
+      <_Driver>
+        <HardwareID><![CDATA[USB\VID_17E9&PID_4311&MI_00]]></HardwareID>
+        <Date>2023-06-28</Date>
+        <Version>11.1.2757.0^</Version>
+      </_Driver>
+    </Or>
+  </DetectInstall>
+  <Dependencies>
+    <And>
+      <Or>
+        <And>
+          <_OS>
+            <OS>WIN10</OS>
+            <OS>WIN10.*</OS>
+            <OS>WIN10-ENT</OS>
+            <OS>WIN10-ENT.*</OS>
+            <OS>WIN10-PRO</OS>
+            <OS>WIN10-PRO.*</OS>
+          </_OS>
+          <_CPUAddressWidth>
+            <AddressWidth>64</AddressWidth>
+          </_CPUAddressWidth>
+          <_WindowsBuildVersion>
+            <Version>14393^</Version>
+          </_WindowsBuildVersion>
+        </And>
+        <_OS>
+          <OS>WIN11</OS>
+        </_OS>
+      </Or>
+      <Or>
+        <And>
+          <Or>
+            <_PnPID><![CDATA[USB\VID_17E9&PID_6015&MI_00]]></_PnPID>
+          </Or>
+          <Or>
+            <_PnPID><![CDATA[USB\VID_17E9&PID_6015&MI_02]]></_PnPID>
+          </Or>
+        </And>
+        <And>
+          <Or>
+            <_PnPID><![CDATA[USB\VID_17E9&PID_434A&MI_00]]></_PnPID>
+            <_PnPID><![CDATA[USB\VID_17E9&PID_4343&MI_00]]></_PnPID>
+          </Or>
+          <Or>
+            <_PnPID><![CDATA[USB\VID_17E9&PID_434A&MI_02]]></_PnPID>
+            <_PnPID><![CDATA[USB\VID_17E9&PID_4343&MI_02]]></_PnPID>
+          </Or>
+        </And>
+        <Or>
+          <_PnPID><![CDATA[USB\VID_17E9&PID_4311&MI_00]]></_PnPID>
+        </Or>
+      </Or>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>dislink1112757.exe</Name>
+        <CRC>BB4D0BC999A899D7C76E4B2F21D7CD88AC74B3C0071F32A6FE58A61B330859D3</CRC>
+        <Size>48080320</Size>
+      </File>
+    </Installer>
+    <Readme default="EN">
+      <File id="EN">
+        <Name>dislink1112757.txt</Name>
+        <CRC>0191E19F786D8C71D3D84250A3B9823184FA593804C1D3558DDA25497AEBCE04</CRC>
+        <Size>12333</Size>
+      </File>
+    </Readme>
+  </Files>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>zqpAgnXcvI6X89ueVJBgRiSZ7h8=</DigestValue></Reference></SignedInfo><SignatureValue>ZyxlS1JkpbbGkcVH1oggzXq13eEDaKbKtu9sAjSfwTwsZOinqhH9tqQDDbugbR7WYMP236V59JeQjHAWtx+N+hgU+HyjoOajCdkOJj2HOlwDjhQK92i1Ekj5B1pV5NBlA0iueugQXUaFEd5PaiCttXpAkN0QV+Y88HV9kcmZfzdUvUCbR/HJ/2MxjaLBRT4Te+ZzIUxNhROMRhP37GzTgN2Af/YqU1IBBvYP603ip85aHQvGh4BtqNd11w2nRN+LjqjsjdfHVHNpmPS0PFKTbvgAUubccq2WqyDViR7SboSDuRlGWBtinB87WiKOv6TXnT9Q2o/cm9bJ+zcHNDyaOVSkj4s3mNywNVRZMhdAxr6likGEebijByKUuYAcfqj051iqoHX5DuPEmFTK7Zzw5SY4oBARU2RgHIz3pWiSkklQ9bBidH/1uyM/g8Voru9Vz3avSDPdiFizo9YuCKVtWEr+KVHDr/Fpgvy4G2CKAK7i0TX81XiK8W5voZ1Nv4Fg</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></Package>

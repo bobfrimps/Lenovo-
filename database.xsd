@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="Database">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Package" type="PackageType" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="version" use="required">
+			  <xs:simpleType>
+				 <xs:restriction base="xs:string"/>
+			  </xs:simpleType>
+		    </xs:attribute>
+			<xs:attribute name="cloud" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FileName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="LocalPath">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Mode">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:complexType name="PackageType">
+		<xs:sequence>
+			<xs:element ref="FileName"/>
+			<xs:element ref="Version"/>
+			<xs:element ref="ReleaseDate"/>
+			<xs:element ref="Size"/>
+			<xs:element ref="URL"/>
+			<xs:element ref="Mode"/>
+			<xs:element ref="Type"/>
+			<xs:element ref="Status"/>
+			<xs:element ref="PreviousStatus"/>
+			<xs:element ref="LocalPath"/>
+			<xs:element ref="Severity"/>
+			<xs:element ref="DisplayLicense"/>
+			<xs:element name="SystemCompatibility" type="SystemCompatibilityType"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="name" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="description" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:element name="PreviousStatus">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Active"/>
+				<xs:enumeration value="Archived"/>
+				<xs:enumeration value="Test"/>
+				<xs:enumeration value="Draft"/>
+				<xs:enumeration value="Hidden"/>
+				<xs:enumeration value="Default"/>
+				<xs:enumeration value="None"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Size">
+		<xs:simpleType>
+			<xs:restriction base="xs:long"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Status">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Active"/>
+				<xs:enumeration value="Archived"/>
+				<xs:enumeration value="Test"/>
+				<xs:enumeration value="Draft"/>
+				<xs:enumeration value="Hidden"/>
+				<xs:enumeration value="Default"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Severity">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Critical"/>
+				<xs:enumeration value="Recommended"/>
+				<xs:enumeration value="Optional"/>
+				<xs:enumeration value="Default"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="DisplayLicense">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Display"/>
+				<xs:enumeration value="NotDisplay"/>
+				<xs:enumeration value="Default"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:complexType name="SystemType">
+		<xs:attribute name="mtm" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="os" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="SystemCompatibilityType">
+		<xs:sequence>
+			<xs:element name="System" type="SystemType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Type">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Quest"/>
+				<xs:enumeration value="Local"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="URL">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Version">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>
