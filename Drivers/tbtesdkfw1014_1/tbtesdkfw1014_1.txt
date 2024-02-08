@@ -1,0 +1,531 @@
+                                                                   Revision : 03
+--------------------------------------------------------------------------------
+Software name	        Lenovo Thunderbolt 3 Essential dock FW update tool 
+
+Support model           
+	X1 Extreme Gen4(#20Y5,20Y6)
+	X13 AMD Gen 2(#20XH,20XJ)
+	X13 Yoga Gen2(#20W8,20W9)
+	X13 Gen 2(#20WK,20WL)
+	X1 Yoga Gen 6(#20XY,20Y0)
+	X1 Carbon Gen 9(#20XW,20XX)
+	X12 Detachable Gen 1(#20UW,20UV)
+	X1 Titanium Yoga Gen 1(#20QA,20QB)
+	X1 Nano Gen 1(#20UN,20UQ)
+	X13 AMD Gen 1(#20UF,20UG)
+	X13 Gen 1(#20T2,20T3)
+	X13 Yoga Gen 1(#20SX,20SY)
+	X1 Yoga 5th Gen(#20UB,20UC)
+	X1 Carbon 8th Gen(#20U9,20UA)
+	X1 Carbon 7th Gen(#20QD,20QE,20R1,20R2)
+	X1 Yoga 4th Gen(#20QF,20QG,20SA,20SB)
+	X390(#20Q0,20Q1,20SC,20SD)
+
+	X390 Yoga(#20NN,20NQ)
+
+	L13 Yoga AMD Gen2(#21AD,21AE)
+	L13 Clam AMD Gen2(#21AB,21AC)
+	L15 AMD Gen2(#20X7,20X8)
+	L14 AMD Gen2(#20X5,20X6)
+	L15 Gen2(#20X3,20X4)
+	L14 Gen2(#20X1,20X2)
+	L13 Clam Gen2(#20VH,20VJ)
+	L13 Yoga Gen2(#20VK,20VL)
+	L15 AMD Gen 1(#20U7,20U8)
+	L14 AMD Gen 1(#20U5,20U6)
+	L14 Gen1(#20U1,20U2)
+	L15 Gen1(#20U3,20U4)
+	L590(#20Q7,20Q8)
+	L490(#20Q5,20Q6)
+	L390 Yoga(#20NT,20NU)
+	L390(#20NR,20NS)
+
+	T15p Gen2(#21A7,21A8)
+	T14 AMD Gen2(#20XK,20XL)
+	T14s AMD Gen2(#20XF,20XG)
+	T14s Gen2(#20WM,20WN)
+	T14 Gen 2(HC)(#20W2,20W3)
+	T14 Gen 2(#20W0,20W1)
+	T15 Gen 2(#20W4,20W5)
+	T15p Gen 1(#20TN,20TM)
+	T14s AMD Gen 1(#20UH,20UJ)
+	T15 Gen 1(#20S6,20S7)
+	T14 Gen 1(HC)(#20S2,20S3)
+	T14 Gen 1(#20S0,20S1)
+	T14s Gen 1(#20T0,20T1)
+	T490s(#20NX,20NY)
+	T490(#20N2,20N3)
+	T590(#20N4,20N5)
+
+	P1 Gen4(#20Y3,20Y4)
+	P15v Gen2(#21A9,21AA)
+	P14s AMD Gen 2(#21A0,21A1)
+	P14s Gen 2(#20VX,20VY)
+	P15s Gen 2(#20W6,20W7)
+	P14s Gen 1(#20S4,20S5)
+	P15s Gen 1(#20T4,20T5)
+	P43s(#20RH,20RJ)
+	P53s(#20N6,20N7)
+
+	ThinkPad 11e Yoga Gen 6(#20SF,20SE)
+
+	ThinkBook 13x ITG(#20WJ)
+	ThinkBook 16p G2 ACH(#20YM)
+	ThinkBook 14 G3 ITL(#21A3)
+	ThinkBook 15 G3 ITL(#21A5)
+	ThinkBook Plus G2 ITG(#20WH)
+	ThinkBook 15 G3 ACL(#21A4)
+	ThinkBook 14 G3 ACL(#21A2)
+	ThinkBook 14s Yoga ITL(#20WE)
+	ThinkBook 14 G2 ITL(#20VD)
+	ThinkBook 15 G2 ITL(#20VE)
+	ThinkBook 14 G2 ARE(#20VF)
+	ThinkBook 15 G2 ARE(#20VG)
+	ThinkBook 13s G2 ITL(#20V9)
+	ThinkBook 14s G2 ITL(#20VA)
+
+	YG Duet 7 13ITL6 L(#82Q7)
+	Yoga Duet 7 13ITL6(#82MA)
+	Yoga Slim 7 13ACN5(#82CY)
+	Yoga Slim 7 13ITL5(#82CU)
+	Yoga Slim7 14ITL05(#82A3)
+	Yoga Slim7 15ITL05(#82AC)
+	Yoga Slim 7 Pro 14ARH5(#82LA)
+	Yoga Slim 9 14ITL5(#82D1)
+	Yoga 7 14ITL5(#82BH,82LW)
+	Yoga 7 15ITL5(#82BJ)
+	YogaS7Carbon13ITL5(#82EV)
+	Yoga Slim 7 Pro 14ITL5(#82FX)
+	Yoga 9 14ITL5(#82BG)
+
+	IP 5 Pro 16ACH6(#82L5)
+	IP 5 Pro 16IHU6(#82L9)
+	IP 5 15ALC05(#82LN)	
+	IP Creator5 16ACH6(#82L6)
+	IP 5 Pro 14ITL6(#82L3)
+	Slim 7 14ITL05(#82A6)
+	Slim 7 15ITL05(#82AF)
+	Slim 9 14ITL5(#82D2)
+
+	X1 Extreme Gen4(#20Y5,20Y6)
+	T15p Gen2(#21A7,21A8)
+	T15g Gen2(#20YS,20YT)
+	P15v Gen2(#21A9,21AA)
+	P1 Gen4(#20Y3,20Y4)
+	P17 Gen2(#20YU,20YV)
+	P15 Gen2(#20YQ,20YR)
+	K14 AMD Gen1(#21CU,21CV)
+	ThinkBook 13s G4 IAP(#21AR)
+
+L13 Clam AMD G3(#21B9,21BA)
+L13 Yoga AMD G3(#21BB,21BC)
+L14 AMD Gen 3(#21C5, 21C6)
+L15 AMD Gen 3(#21C7,21C8)
+E15 AMD Gen 4(#21ED,21EE)
+E14 AMD Gen 4(#21EB,21EC)
+P14s Gen 3(#21AK,21AL)
+P16s Gen 1(#21BT,21BU)
+T16 Gen 1(#21BV,21BW)
+T14 Gen 3(#21AH,21AJ)
+X1 Yoga Gen 7(#21CD,21CE)
+X1 Carbon Gen 10(#21CB,21CC)
+Thunderbolt 3 Essential dock（#40AV)
+
+X13 Yoga Gen 3(#21AW,21AX)	
+X1 Nano G2(#21E8,21E9)	
+X13 Gen 3(#21BN,21BQ)
+L13 Yoga G3(#21B5,21B6)	
+L13 Clam G3(#21B3,21B4)	
+L15 Gen 3((#21C3,21C4)	
+L14 Gen 3(#21C1,21C2)	
+T14s Gen 3(#21BR,21BS)
+T15p Gen 3(#21DA,21DB)
+P15v Gen 3(#21D8,21D9)
+K14 Gen 1(#21CS,21CT)
+
+Operating Systems	
+Microsoft Windows 10 64-bit (1809 or later)
+Microsoft Windows 11 (21H2 or later)
+			
+			Refer to marketing materials to find out what computer
+			models support which Operating Systems.
+
+FW Package : v1.0.14
+			Tool : v1.0.2.27
+			TBT : 62.00
+			PD : 10.0.0
+			DP Hub : 5.06.000
+			Audio : 49-0E-41 0041
+			USB HUB-1 : 5114
+			USB HUB-2 : 5114
+			DMC : 1.6.18
+
+                       
+Support device		Lenovo Thunderbolt 3 Essential dock
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package updates the firmware (Lenovo Thunderbolt 3 Essential dock) to update the
+  following chip of dock.
+
+  Chip                	Chip name in the Dock
+  ------------------------------------------------------------------------------
+  Intel TBT3		TITAN-RIDGE_DD
+  Synaptics DP HUB	VMM5210
+  VIA USB HUB1		VL820
+  VIA USB HUB2		VL817
+  Conexant Audio	CX21985
+  Cypress DMC		CY7C65219
+  Cypress PD		CCG5C
+
+  Refer to marketing materials to find out what computer models support which
+  dock.
+
+  If this package has been installed, this package will fix problems, add new 
+  functions, or expand functions as noted below.
+
+  This program is language independent and can be used with any language system.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+  FW version: v1.0.14
+ 	Tool version: v1.0.2.27
+- [Important] Improve update stability.
+
+
+[Important updates]
+  Nothing.
+
+[New functions or enhancements]
+	Tool Version Name=1.0.2.27
+		- FW package version field change to BcdDevice.
+		- FW Version display format modify to "x.x.xx"
+
+	Tool Version Name=1.0.2.6
+		- Imporve the stability.
+	
+	Tool Version Name=1.0.2.0
+		- Improved execution time.
+		
+	Tool Version Name=1.0.1.9
+		- Fixed check FW version's time over 3 seconds issue.
+		
+	Tool Version Name=1.0.1.8
+		- Check version tool without innosetup package, and execute RC need to be change.
+		
+	Tool Version Name=1.0.1.7
+		- Add argument /showver for tvsu check version.
+
+	Tool Version Name=1.0.1.5
+		- Add iFwversion update.
+
+	Tool Version Name=1.0.1.4
+		- Improved reduce the time an empty CMD prompt window during flashing, add argument /tvsu.
+		- Add the check version execution timestamp to the log file.
+
+	Tool Version Name=1.0.1.3
+		- Improved GUI mode description version string.
+
+
+[Problem fixes]
+	1. DP Hub Synaptics
+	[Ver5.06.000] 
+	   Generated on 22:20:49.25 Thu 09/16/2021 
+	   Modified items: 
+		- Change ViewXpand implementation, remove non-standard horizontal splitting ViewXpand resolution supporting to save code size
+		- Disable ignore MSA mode support to save code size
+		- Check AEQ done status only if link training is in progress when source check DPCD 0x202 status 
+		- Re-write the VSC packet detection logic to avoid long time waiting if the source set MSA MISC1 BIT6 but no VSA packet out
+		- Fix the B1 only issue of DPTX audio will be in reset state when there is no VSA packet and no re-programing happened
+		- Add option to change DPTX output slew rate
+		- Add configuration file option to disable the DPRX HDCP BCaps if any of the downstream TX can't support HDCP
+
+	2. DMC Cypress
+	[V1.6.18] 2021/11/02
+		- FW package version field change to BcdDevice.
+		
+	3. PD Cypress
+	[V10.0.0] 2021/9/02
+		- Fix PD did not response get source cap issue.
+	
+	4. Audio Conexant
+	[v0016] 2021/01/21
+		- [AUDTLOG-36925] Lenovo Dock / MS: The 3.5mm headset no function when attached headset to dock in S4/S5 state then resume
+		- Fixed BSOD issue.
+		
+	[v0041] 2021/10/18
+		- Uppport UAC 2.0 driver
+
+--------------------------------------------------------------------------------
+DETERMINING WHICH VERSION IS INSTALLED
+
+In File Manager
+
+  1. Locate the file that was downloaded and double-click "tbtesdkfw10XX_X.exe".
+  2. Follow the instructions on the screen.
+
+--------------------------------------------------------------------------------
+NOTES
+
+  Nothing
+
+
+--------------------------------------------------------------------------------
+INSTALLATION INSTRUCTIONS
+
+Notes:
+- If your dock runs satisfactorily now, it may not be necessary to update
+  the software. To determine if you should update the software, refer to the
+  Version Information section.
+
+
+Manual Install
+
+  This section assumes to use Internet Explorer and Windows Explorer.
+
+  Downloading file
+  1. Click once on the underlined file name(tbtesdkfw10XX_X.exe). Once this is done, some pop-up windows will appear.
+  2. Follow the instructions on the screen.
+  3. Choose the folder you would like to download the file to and click Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating that the download completed successfully.
+
+  4. Make sure to be logged on with an administrator account.
+  5. Locate the folder where the file was downloaded.
+
+  method 1:
+  6. For UI mode [File downloaded folder\]tbtesdkfw10XX_X.exe /tvsuui
+  7. Follow the instructions on the screen to complete update and restart the computer.
+  8. For Silent mode [File downloaded folder\]tbtesdkfw10XX_X.exe /u /VERYSILENT
+
+ 
+  method 2:
+  Extracting file
+  9. For Extracting file [File downloaded folder\]tbtesdkfw10XX_X.exe /unp /DIR=c:\temp\EsDockFwUpdate
+ 10. If you would like to change a different folder, please modify /DIR=[Select folder].
+ 11. Follow the instructions on the screen.
+ 12. In the "Extract Or Install" window, click "Extract Only". All the necessary files will
+     be extracted to the folder selected in the step 9. (Ex: c:\temp\EsDockFwUpdate)
+
+  Update FW file
+ 13. UI mode: At the command line mode and execute [File extracted folder\]Fwupdate.exe
+ 14. Silent mode: At the command line mode and execute [File extracted folder\]Fwupdate.exe /u /s /tvsu
+ 15. Silent mode force reboot system: At the command line mode and execute [File extracted folder\]Fwupdate.exe /s /forcereboot
+
+  Check dock/package version
+ 16. At the command line mode and execute [File extracted folder\]Fwupdate.exe /showver
+
+--------------------------------------------------------------------------------
+UNINSTALLATION INSTRUCTIONS
+
+  Nothing
+
+
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions have been released to date.
+
+  Version                         Build ID		Rev.	Issue Date
+ ------------------------         --------------	----	-----------
+ FW Package : v1.0.14		  tbtesdkfw1014_1	    	2021/12/09
+	Tool : v1.0.2.27
+	TBT : 62.00
+	PD : 10.0.0
+	DP Hub : 5.06.000
+	Audio : 49-0E-41 0041
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.18
+
+
+ FW Package v1.0.1.3		  tbtesdkfw1013_tvsu3	    2021/08/05
+	Tool : v1.0.2.2
+	TBT : 62.00
+	PD : 8.0.0
+	DP Hub : 5.05.006
+	Audio : 49-0E-15 0015
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+ FW Package v1.0.1.3		  tbtesdkfw_1026	    	2021/07/27
+	Tool : v1.0.2.2
+	TBT : 62.00
+	PD : 8.0.0
+	DP Hub : 5.05.006
+	Audio : 49-0E-15 0015
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+
+ FW Package v1.0.1.3		  tbtesdkfw_1022	    	2021/05/12
+	Tool : v1.0.2.2
+	TBT : 62.00
+	PD : 8.0.0
+	DP Hub : 5.05.006
+	Audio : 49-0E-15 0015
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+ FW Package v1.0.1.2		  tbtesdkfw_1015	    	2020/08/27
+	Tool : v1.0.1.9
+	TBT : 50.00
+	PD : 8.0.0
+	DP Hub : 5.05.000
+	Audio : 49-0E-13 0013
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+ FW Package v1.0.1.2		  tbtesdkfw_1014	    	2020/08/21
+	Tool : v1.0.1.8
+	TBT : 50.00
+	PD : 8.0.0
+	DP Hub : 5.05.000
+	Audio : 49-0E-13 0013
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+ FW Package v1.0.1.2		  tbtesdkfw_1013	    	2020/07/22
+	Tool : v1.0.1.7
+	TBT : 50.00
+	PD : 8.0.0
+	DP Hub : 5.05.000
+	Audio : 49-0E-13 0013
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+
+ FW Package v1.0.1.2		  tbtesdkfw_1012	    	2020/06/30
+	Tool : v1.0.1.6
+	TBT : 50.00
+	PD : 8.0.0
+	DP Hub : 5.05.000
+	Audio : 49-0E-13 0013
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+ FW package v1.0.1.1		  N/A	    			N/A
+	Tool : v1.0.1.5
+	TBT : 50.00
+	PD : 8.0.0
+	DP Hub : 5.04.005
+	Audio : 49-0E-13 0013
+	USB HUB-1 : 5114
+	USB HUB-2 : 5114
+	DMC : 1.6.15
+
+ FW package v1.0.1.0		  N/A			    	N/A
+	Tool : v1.0.1.4
+	TBT : 50.00
+	PD : 8.0.0
+	DP Hub : 5.04.005
+	Audio : 49-0E-08 2008
+	USB HUB-1 : 0D74
+	USB HUB-2 : 04F4
+	DMC : 1.6.15
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of firmware, refer to the Determining which version is
+  installed section.
+
+
+Summary of Changes
+
+  Where: <   >        Package version number
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+
+<v1.0.14> (tbtesdkfw1014_1)  Revision : 03
+- (New)
+Add support model
+
+X13 Yoga Gen 3(#21AW,21AX)	
+X1 Nano G2(#21E8,21E9)	
+X13 Gen 3(#21BN,21BQ)
+L13 Yoga G3(#21B5,21B6)	
+L13 Clam G3(#21B3,21B4)	
+L15 Gen 3((#21C3,21C4)	
+L14 Gen 3(#21C1,21C2)	
+T14s Gen 3(#21BR,21BS)
+T15p Gen 3(#21DA,21DB)
+P15v Gen 3(#21D8,21D9)
+K14 Gen 1(#21CS,21CT)
+
+<v1.0.14> (tbtesdkfw1014_1)
+- (New functions or enhancements)
+	1. 	Tool package version: v1.0.2.27
+	2.  Update USB Audio FW to 49-0E-0041 0041.
+	3.  Update DP Hub FW to 5.06.000.
+	4.  Update DMC FW to 1.6.18
+	5.  Update DMC PD to 10.0.0
+
+<v1.0.1.3> (tbtesdkfw1013_tvsu3)
+- (New functions or enhancements)
+	1. 	Tool package version: v1.0.2.5
+	2.  Update USB Audio FW to 49-0E-0015 0015.
+	3.  Update DP Hub FW to 5.05.006.
+	4.  Update TBT FW to 62.00
+
+<v1.0.1.2> (tbtesdkfw_1015)
+- (New functions or enhancements)
+	1. 	Tool package version: v1.0.1.9
+	2.  Fixed check FW version's time over 3 seconds issue.
+
+<v1.0.1.2> (tbtesdkfw_1014)
+- (New functions or enhancements)
+	1. 	Tool package version: v1.0.1.8
+	2.  Check version tool without innosetup package, and execute RC need to be change.
+
+<v1.0.1.2> (tbtesdkfw_1013)
+- (New functions or enhancements)
+	1. 	Tool package version: v1.0.1.7
+	2.  Add argument /showver for tvsu check version.
+
+<v1.0.1.2> (tbtesdkfw_1012)
+- (New functions or enhancements)
+	1. 	Tool package version: v1.0.1.6
+	2.	Update DP Hub FW to 5.05.000.
+
+<v1.0.1.1> (tbtesdkfw_1011) 
+- (New functions or enhancements)
+	1. 	Tool package version: v1.0.1.5
+	2.	Update USB Hub FW to 5114/5114
+	3.	Update USB Audio FW to 49-0E-13 0013.
+
+<v1.0.1.0> (tbtesdkfw_1010) 
+- [Important] Mass production version
+	1. 	Tool package version: v1.0.1.2
+
+
+--------------------------------------------------------------------------------
+LIMITATIONS
+
+  Nothing
+
+
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo and ThinkPad are registered trademarks of Lenovo.
+
+* Intel is a registered trademark of Intel Corporation.
+
+* Microsoft, Windows are registered trademarks of Microsoft Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.

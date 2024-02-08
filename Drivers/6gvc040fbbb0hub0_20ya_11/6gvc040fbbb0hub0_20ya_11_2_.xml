@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="CHIP_6GVC0_20YA_11" id="6gvc040fbbb0hub0_20ya_11" version="5.12.0.38" hide="False">
+  <Title default="EN">
+    <Desc id="EN">AMD Chipset Driver - 11</Desc>
+  </Title>
+  <DetectVersion type="Inf">
+    <_PnPID><![CDATA[PCI\VEN_1002&DEV_4353]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_1002&DEV_4363]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_1002&DEV_4372]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_1002&DEV_4385]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_1022&DEV_780B]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_1022&DEV_790B]]></_PnPID>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="2" />
+  <Vendor>Lenovo</Vendor>
+  <ExtractCommand>6gvc040fbbb0hub0.exe /VERYSILENT /DIR=%PACKAGEPATH% /EXTRACT="YES"</ExtractCommand>
+  <ReleaseDate>2022-11-30</ReleaseDate>
+  <DiskSpaceNeeded>10357679</DiskSpaceNeeded>
+  <Reboot type="3" />
+  <Brand type="3" />
+  <PackageType type="2" />
+  <Install rc="0,259,3010" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\silentinstall.exe</Cmdline>
+  </Install>
+  <ManualInstall type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\silentinstall.exe</Cmdline>
+  </ManualInstall>
+  <Uninstall />
+  <DetectInstall>
+    <_Driver>
+      <HardwareID><![CDATA[PCI\VEN_1002&DEV_4353]]></HardwareID>
+      <HardwareID><![CDATA[PCI\VEN_1002&DEV_4363]]></HardwareID>
+      <HardwareID><![CDATA[PCI\VEN_1002&DEV_4372]]></HardwareID>
+      <HardwareID><![CDATA[PCI\VEN_1002&DEV_4385]]></HardwareID>
+      <HardwareID><![CDATA[PCI\VEN_1022&DEV_780B]]></HardwareID>
+      <HardwareID><![CDATA[PCI\VEN_1022&DEV_790B]]></HardwareID>
+      <Date>2021-06-04</Date>
+      <Version>5.12.0.38^</Version>
+    </_Driver>
+  </DetectInstall>
+  <Dependencies>
+    <And>
+      <_OS>
+        <OS>WIN11</OS>
+      </_OS>
+      <Or>
+        <_PnPID><![CDATA[PCI\VEN_1002&DEV_4353]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_1002&DEV_4363]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_1002&DEV_4372]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_1002&DEV_4385]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_1022&DEV_780B]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_1022&DEV_790B]]></_PnPID>
+      </Or>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>6gvc040fbbb0hub0.exe</Name>
+        <CRC>9FF5AB84E2D791F6CB02C69116BEF2E80FA331F8766284F1F820802819097598</CRC>
+        <Size>2093008</Size>
+      </File>
+    </Installer>
+  </Files>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Pk9MpZPhCFcDydcgeUntqkEKGas=</DigestValue></Reference></SignedInfo><SignatureValue>a2eDhf2WIgnxqGaH5vDSOQJwlnlZIgZvJncCWU7XdtAK9kWFyfVE12moK/gT5d9JqiMieMHHeI99S9StF1FdXn16//PUvD606NmKIRYL0KRz35UboIOhhMzNQz0WJqjMh5TKPeWL+eKNk6sgBh4JU77IbInGmSbQaqVaVmqotH0VLnDyyuetDD8QhY6THZZsyjO8/4xQhuYCuVGbUPt4vylvYhHwrF1BiOmTlNBwB/RIg6dmnO3WgX+cBS87b2cMqHg6rRhuiAPdgiip0CU9rXA2O7Ics1sf5+9Q06JWgVojl6kXvcSDF6HivBYScqCbv4A3LB+e4dV8guOO4Ah2qO1eMgvCsdM8nvbPfzvBUtOz4POVhyaA8tbLxvAW/J/RhPox62+ge63eIj0/OW0D1UoIMFROhLM2m2SeHkQufS8RRV7rgHEAYEzLbfa0A5+2soRMCBq8uOUTn3nlJ2z3PnLe5i3phlKz6lg6r3mbpUxlcaHZY7d2fPETu/AGGBOI</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></Package>

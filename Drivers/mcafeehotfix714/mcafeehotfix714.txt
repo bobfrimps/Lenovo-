@@ -1,0 +1,272 @@
+                                                                   Revision : 04
+--------------------------------------------------------------------------------
+
+Software name      McAfee LiveSafe 16.0.27 Hotfix
+
+--------------------------------------------------------------------------------
+
+Support model      
+	Legion T5-26AMR5 Desktop (Lenovo)(Machine types: 90RB,90RC）
+	Legion T5-26AMR5 Desktop (Lenovo)（Machine types: 90Q9,90Q8）
+	Legion T5-26IOB6 Desktop (Lenovo)（Machine types: 90RS,90RT）
+	ideacentre AIO 3-22IMB05(Machine types: F0EV)
+	ideacentre AIO 3-22IMB05(Machine types: F0EX)
+	A340-24IGM All-in-One (ideacentre)(Machine types: F0E7)
+	ideacentre AIO 3-24IMB05((Machine types: F0EU)
+	IdeaCentre AIO 3-27ALC6((Machine types: F0FY)
+	IdeaCentre AIO 3-24ALC6(Machine types: F0G1)
+	IdeaCentre AIO 3-24ITL6(Machine types: F0G0)
+	IdeaCentre 5-14IOB6 Desktop(Machine types: 90RJ)
+	IdeaCentre Gaming 5-14ACN6 Desktop(Machine types: 90RW)
+	IdeaCentre G5-14IMB05 Desktop(Machine types: 90N9,90NR)
+	IdeaCentre Gaming 5-14IOB6 Desktop(Machine types: 90RE)
+	IdeaCentre AIO 3-24IIL5(Machine types: F0FR)
+	IdeaCentre AIO 5-24ALC6(Machine types: F0G2)
+	Yoga AIO 7-27ACH6(Machine types: F0G7)
+	Yoga A940-27ICB All-in-One (Lenovo) (Machine types: F0E4)
+	Yoga A940-27ICB All-in-One (Lenovo) (Machine types: F0E5 )
+	IdeaCentre 5 14IOB6(Machine types: 90RH,90RD)
+	Lenovo ThinkBook 15p IMH(Machine types: 20V3)
+	ThinkBook 13s G2 ITL Laptop(Machine types: 20V9)
+	ThinkBook 14S G2 ITL(Machine types: 20VA,20VD)
+	ThinkBook 15 G2 ITL(Machine types: 20VE)
+	ThinkBook 14 G2 ARE(Machine types: 20VF)
+	ThinkBook 15 G2 ARE(Machine types: 20VG)
+	ThinkBook 14S YOGA ITL(Machine types: 20WE)
+	ThinkBook PLUS G2 ITG(Machine types: 20WH)
+	ThinkBook 13X ITG(Machine types: 20WJ)
+	ThinkBook 13S G3 ACN(Machine types: 20YA)
+	ThinkBook 16P G2 ACH(Machine types: 20YM)
+	ThinkBook 14P G2 ACH(Machine types: 20YN)
+	ThinkBook 14 G3 ACL(Machine types: 21A2)
+	ThinkBook 14 G3 ITL(Machine types: 1A32)
+	ThinkBook 15 G3 ACL(Machine types: 21A4)
+	ThinkBook 15 G3 ITL(Machine types: 21A5)
+	ThinkBook 13S G4 IAP(Machine types: 21AR)
+	ThinkBook 14 G4 ABA(Machine types: 21DK)
+	ThinkBook 15 G4 ABA(Machine types: 21DL)
+	IdeaPad V140-15IWL(Machine types: 81K6)
+	IdeaPad L340-15API(Machine types: 81LW)
+	IdeaPad LEGION Y540-15IRH(Machine types: 81SX)
+	IdeaPad LEGION Y540-15 PG0(Machine types: 81SY)
+	IdeaPad 3 14ADA05(Machine types: 81W0)
+	IdeaPad 3 15ADA05(Machine types: 81W1)
+	IdeaPad 3 17ADA05(Machine types: 81W2)
+	IdeaPad 3 14ARE05(Machine types: 81W3)
+	IdeaPad 3 15ARE05(Machine types: 81W4)
+	IdeaPad 3 14IML05(Machine types: 81WA)
+	IdeaPad 3 15IML05(Machine types: 81WB)
+	IdeaPad 3 17IML05(Machine types: 81WC)
+	IdeaPad 3 14IIL05(Machine types: 81WD)
+	IdeaPad 3 15IIL05(Machine types: 81WE)
+	IdeaPad 3 17IIL05(Machine types: 81WF)
+	IdeaPad 3 14IGL05(Machine types: 81WH)
+	IdeaPad 3 15IGL05(Machine types: 81WQ)
+	IdeaPad FLEX 5 14ARE05(Machine types: 81X2)
+	IdeaPad FLEX 5 15IIL05(Machine types: 81X3)
+	IdeaPad 3 15ITL05(Machine types: 81X8)
+	IdeaPad GAMING 3 15IMH05(Machine types: 81Y4)
+	LEGION5 15IMH05H(Machine types: 81Y6)
+	IdeaPad 5 14IIL05(Machine types: 81YH)
+	IdeaPad 5 15IIL05(Machine types: 81YK)
+	IdeaPad 5 14ARE05(Machine types: 81YM)
+	IdeaPad 5 15ARE05(Machine types: 81YQ)
+	LEGION7 15IMH05(Machine types: 81YT,81YU)
+	LEGION5 15IMH05(Machine types: 82AU)
+	LEGION5P 15IMH05(Machine types: 82AY)
+	LEGION5 15ARH05(Machine types: 82B5)
+	LEGION S7 15IMH5(Machine types: 82BC)
+	IdeaPad YOGA 9 14ITL5(Machine types: 82BG)
+	IdeaPad YOGA 7 14ITL5(Machine types: 82BH)
+	IdeaPad YOGA 7 15ITL5(Machine types: 82BJ)
+	IdeaPad V14-IGL(Machine types: 82C2)
+	IdeaPad V15-IGL(Machine types: 82C3)
+	IdeaPad V14-IIL(Machine types: 82C4)
+	IdeaPad V15-IIL(Machine types: 82C5)
+	IdeaPad V14-ADA(Machine types: 82C6)
+	IdeaPad V15-ADA(Machine types: 82C7)
+	IdeaPad YOGA SLIM 7 13ACN5(Machine types: 82CY)
+	IdeaPad YOGA SLIM 9 14ITL5(Machine types: 82D1)
+	IdeaPad YOGA 9 15IMH5(Machine types: 82DE)
+	IdeaPad GAMING 3 15ARH05(Machine types: 82EY)
+	IdeaPad 5 14ITL05(Machine types: 82FE)
+	IdeaPad 5 15ITL05(Machine types: 82FG)
+	YOGA 6 13ARE05(Machine types: 82FN)
+	YOGA S7 PRO 14ITL5(Machine types: 82FX)
+	S540-13ITL(Machine types: 82H1)
+	IdeaPad 3 14ITL6(Machine types: 82H7)
+	IdeaPad 3 15ITL6(Machine types: 82H8)
+	IdeaPad L3 15ITL6(Machine types: 82HL)
+	IdeaPad FLEX 5 15ITL05(Machine types: 82HT)
+	IdeaPad FLEX 5 14ALC05(Machine types: 82HU)
+	IdeaPad FLEX 5 15ALC05(Machine types: 82HV)
+	LEGION5PRO 16ITH6H(Machine types: 82JD)
+	LEGION5PRO 16ITH6(Machine types: 82JF)
+	LEGION5 15ITH6H(Machine types: 82JH)
+	LEGION5 15ITH6(Machine types: 82JK)
+	LEGION5 17ITH6H(Machine types: 82JM)
+	LEGION5 17ITH6(Machine types: 82JN)
+	LEGION5PRO 16ACH6H(Machine types: 82JQ)
+	LEGION5PRO 16ACH6(Machine types: 82JS)
+	LEGION5 15ACH6H(Machine types: 82JU)
+	LEGION5 15ACH6(Machine types: 82JW)
+	LEGION5 17ACH6H(Machine types: 82JY)
+	LEGION5 17ACH6(Machine types: 82K0)
+	IdeaPad GAMING 3 15IHU6(Machine types: 82K1)
+	IdeaPad GAMING 3 15ACH6(Machine types: 82K2)
+	IdeaPad LEGION7 16ITHG6(Machine types: 82K6)
+	IdeaPad LEGION S7 15ACH6(Machine types: 82K8)
+	IdeaPad V14-ITL(Machine types: 82KA)
+	IdeaPad V15-ITL(Machine types: 82KB)
+	IdeaPad V14-ALC(Machine types: 82KC)
+	IdeaPad V15-ALC(Machine types: 82KD)
+	IdeaPad 3 14ALC6(Machine types: 82KT)
+	IdeaPad 3 15ALC6(Machine types: 82KU)
+	IdeaPad 3 17ALC6(Machine types: 82KV)
+	IdeaPad 5 PRO 14ITL6(Machine types: 82L3)
+	IdeaPad 5 PRO 14ACN6(Machine types: 82L7)
+	IdeaPad 5 14ALC05(Machine types: 82LM)
+	IdeaPad 5 15ALC05(Machine types: 82LN)
+	IdeaPad YG9 14IAP7(Machine types: 82LU)
+	IdeaPad 1 14IJL7(Machine types: 82LV)
+	IdeaPad 1 15IJL7(Machine types: 82LX)
+	LEGION7 16ACHG6(Machine types: 82N6)
+	IdeaPad YOGA 7 14ACN6(Machine types: 82N7)
+	IdeaPad V15 G1 IML(Machine types: 82NB)
+	IdeaPad YOGA 6 13ALC6(Machine types: 82ND)
+	IdeaPad YG S7 PRO 14IHU5 O(Machine types: 82NH)
+	IdeaPad YG S7PRO 14ACH5 OD(Machine types: 82NK)
+	IdeaPad V17 G2 ITL(Machine types: 82NX)
+	IdeaPad 1 14ADA7(Machine types: 82R0)
+	IdeaPad 1 15ADA7(Machine types: 82R1)
+	IdeaPad1 14ALC7(Machine types: 82R3)
+	IdeaPad1 15ALC7(Machine types: 82R4)
+	IdeaPad FLEX5 16IAU7(Machine types: 82R8)
+	IdeaPad FLEX5 14ALC7(Machine types: 82R9)
+	IdeaPad FLEX5 16ALC7(Machine types: 82RA)
+	LEGION5 15IAH7H(Machine types: 82RB)
+	LEGION5 15IAH7(Machine types: 82RC)
+	LEGION5PRO 16IAH7H(Machine types: 82RF)
+	IdeaPad3 14ABA7(Machine types: 82RM)
+	IdeaPad3 15ABA7(Machine types: 82RN)
+	IdeaPad3 17ABA7(Machine types: 82RQ)
+	LEGION5PRO 16IAH7(Machine types: 82S0)
+	IdeaPad GAMING3 15IAH7(Machine types: 82S9)
+	IdeaPad YGS7PRO 14IAP7(Machine types: 82SV)
+	IdeaPad YG6 13ALC7(Machine types: 82UD)
+	IPG - 100w Gen 3 Laptop (Lenovo) (Machine types: 82HY)
+	IPG - 300w Gen 3 Laptop (Lenovo)(Machine types: 82J1)
+	IPG - 500w Gen 3 Laptop (Lenovo)(Machine types: 82J3) 
+	IPG - 14W Gen 2 Laptop (Lenovo)(Machine types: 82N8) 
+	IPG - 100e 2nd Gen Notebook (Lenovo) (Machine types: 81M8)
+	IPG - 300e 2nd Gen Notebook (Lenovo) (Machine types: 81M9)
+	14W_2_WIN_APO(Machine types: 82N9)
+	300W_3_WIN_APO(Machine types: 82J2)
+	500W_3_WIN_IJL(Machine types: 82J4)
+	D330-10IGL(Machine types: 82H0)
+	E41-50(Machine types: 82HW)
+	CREATOR 5 15IMH05(Machine types: 82D4)
+	DUET 3 10IGL5(Machine types: 82AT)
+	DUET 3 10IGL5-LTE(Machine types: 82HK)
+	IP 3 17ARE05(Machine types: 81W5)
+	L3 15IML05(Machine types: 81Y3)
+	LEGION S7 15ARH5(Machine types: 82HM)
+	LEGION5 15ACH6A(Machine types: 82NW)
+	LEGION5 15ARH05H(Machine types: 82B1)
+	LEGION5 17IMH05(Machine types: 82B3)
+	LEGION5 17IMH05H(Machine types: 81Y8)
+	LEGION5P 15IMH05H(Machine types: 82AW)
+	S145-14API(Machine types: 81UV)
+	YOGA DUET 7 13ITL6(Machine types: 82MA)
+	V17-IIL(Machine types: 82GX)
+	IdeaPad Gaming L340-15IRH) - (Machine types: 81LK)
+	Legion Y540-17IRH - (Machine types: 81Q4)
+	IdeaPad E41-55 - (Machine types: 82FJ)
+	Legion 5-17ARH05H - (Machine types: 82GN)
+
+--------------------------------------------------------------------------------
+
+Operating System   
+	Microsoft Windows 10  64-bit (20H2 or later)
+	Microsoft Windows 11  64-bit (all)
+--------------------------------------------------------------------------------
+
+Versions           16.0.27    
+
+--------------------------------------------------------------------------------
+
+WHAT THIS PACKAGE DOES
+This package is delivered to user which had McAfee 16.0.27 preinstall failed.
+This package created a McAfee DAD.Execute.Updates task and created HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\McAfee\DAD.Execute.Updates
+HKEY_LOCAL_MACHINE\SOFTWARE\McAfeeHotFix2022 registries.
+The McAfee DAD.Execute.Updates task will be run to download McAfee LiveSafe 16.0.43 and install on your device to get your McAfee LiveSafe back to work.
+
+-------------------------------------------------------------------------------
+
+[Problem fixes]
+  - Fixed McAfee 16.0.27 preinstall failed issue
+
+--------------------------------------------------------------------------------
+
+VERSION INFORMATION
+
+  The following versions have been released to date.
+
+Version        BuildID     Rev.  Issue Date
+-------------  ----------  ----  -----------
+16.0.27   mcafeehotfix714    04    2022/07/13
+16.0.27   mcafeehotfix714    03    2022/06/13
+16.0.27   mcafeehotfix714    02    2022/05/23
+16.0.27   mcafeehotfix714   01    2022/05/13
+
+ Note: Revision number (Rev.) is for administrative purpose of this README document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+
+Summary of Changes
+Rev.04
+- Updated Operating System to add Microsoft Windows 11  64-bit (all)
+
+Rev.03
+- Add below MTs to Support model: 
+IdeaPad Gaming L340-15IRH) - (Machine types: 81LK)
+Legion Y540-17IRH - (Machine types: 81Q4)
+IdeaPad E41-55 - (Machine types: 82FJ)
+Legion 5-17ARH05H - (Machine types: 82GN)
+
+Rev.02
+- Add below MTs to Support model: 
+14W_2_WIN_APO(Machine types: 82N9)
+300W_3_WIN_APO(Machine types: 82J2)
+500W_3_WIN_IJL(Machine types: 82J4)
+D330-10IGL(Machine types: 82H0)
+E41-50(Machine types: 82HW)
+CREATOR 5 15IMH05(Machine types: 82D4)
+DUET 3 10IGL5(Machine types: 82AT)
+DUET 3 10IGL5-LTE(Machine types: 82HK)
+IP 3 17ARE05(Machine types: 81W5)
+L3 15IML05(Machine types: 81Y3)
+LEGION S7 15ARH5(Machine types: 82HM)
+LEGION5 15ACH6A(Machine types: 82NW)
+LEGION5 15ARH05H(Machine types: 82B1)
+LEGION5 17IMH05(Machine types: 82B3)
+LEGION5 17IMH05H(Machine types: 81Y8)
+LEGION5P 15IMH05H(Machine types: 82AW)
+S145-14API(Machine types: 81UV)
+YOGA DUET 7 13ITL6(Machine types: 82MA)
+V17-IIL(Machine types: 82GX)
+
+Rev.01
+- First Release
+
+--------------------------------------------------------------------------------
+DETERMINING WINDOWS VERSION
+
+  1. Hold down the Windows logo key and press R to open the "Run" dialog box.
+  2. Type in "winver" and press Enter to open the "About Windows" dialog box.
+     Windows Version information will be indicated in this dialog box.
+
+--------------------------------------------------------------------------------
+
+UNINSTALLATION INSTRUCTIONS
+This hotfix package can be removed while uninstall McAfee LiveSafe

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="FWU_USBCSM_DK" id="usbcsmdkfw3156_2" version="3.1.56" hide="False">
+  <Title default="EN">
+    <Desc id="EN">ThinkPad Universal USB-C Smart Dock FW Package - 10 (1903 or Later)/11 (21H2 or Later)</Desc>
+  </Title>
+  <DetectVersion type="File" show="False">
+    <File>%WINDOWS%\explorer.exe</File>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="1" />
+  <Vendor>Lenovo</Vendor>
+  <ExtractCommand>usbcsmdkfw3156_2.exe /VERYSILENT /DIR=%PACKAGEPATH% /EXTRACT="YES"</ExtractCommand>
+  <ReleaseDate>2023-05-29</ReleaseDate>
+  <DiskSpaceNeeded>15193604</DiskSpaceNeeded>
+  <Reboot type="5" />
+  <Brand type="2" />
+  <PackageType type="4" />
+  <Install rc="0" rccancel="20" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\FWUpdateTool.exe /u /s /tvsu</Cmdline>
+  </Install>
+  <Uninstall />
+  <DetectInstall />
+  <Dependencies>
+    <And>
+      <Or>
+        <And>
+          <_OS>
+            <OS>WIN10</OS>
+            <OS>WIN10.*</OS>
+            <OS>WIN10-ENT</OS>
+            <OS>WIN10-ENT.*</OS>
+            <OS>WIN10-PRO</OS>
+            <OS>WIN10-PRO.*</OS>
+          </_OS>
+          <_CPUAddressWidth>
+            <AddressWidth>64</AddressWidth>
+          </_CPUAddressWidth>
+          <_WindowsBuildVersion>
+            <Version>18362^</Version>
+          </_WindowsBuildVersion>
+        </And>
+        <_OS>
+          <OS>WIN11</OS>
+        </_OS>
+      </Or>
+      <_ExternalDetection rc="0">%PACKAGEPATH%\usbcsmdkfw3156_2_check.exe /3156 /usbcsmdkfw3156_2_sfx.exe</_ExternalDetection>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>usbcsmdkfw3156_2.exe</Name>
+        <CRC>BE9E1C3C283584917180840374345B0DBBE4EC4A77B7FBC394A7081DDAA80BB1</CRC>
+        <Size>2861160</Size>
+      </File>
+    </Installer>
+    <Readme default="EN">
+      <File id="EN">
+        <Name>usbcsmdkfw3156_2.txt</Name>
+        <CRC>051AE064CAFE992C041A99B5B6A4A8A6FAE9E756F07726666C6B5838AAC648BC</CRC>
+        <Size>8784</Size>
+      </File>
+    </Readme>
+    <External>
+      <File>
+        <Name>usbcsmdkfw3156_2_sfx.exe</Name>
+        <CRC>ACD510D94E3FEA2B4742C4F917BA255884418C774043FE371ADAAEE044CFFA19</CRC>
+        <Size>426304</Size>
+      </File>
+      <File>
+        <Name>usbcsmdkfw3156_2_check.exe</Name>
+        <CRC>19B2E2D3998997CF92D3C478E9816FF482745100200D3107C9A3DAAD680A8CAF</CRC>
+        <Size>14520</Size>
+      </File>
+    </External>
+  </Files>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>QUvNszAVSq/qV0d+yj5v9vssQCY=</DigestValue></Reference></SignedInfo><SignatureValue>jaxFOhRHX/qEXLZHqby+c7M0VoPfI89bKcfHwNQevoV2tHJ4lUgPwoIYorrtvoKy8FKZxSLjM3LFObtR3Zk0ddfkq8ikl1AsZ/egI1Fd6KYbvyCBzV0YfcovAH0Aeinbr4M5qOBifrSvLDTggpBVAoXOXwG6rQDr06vo0vEimynvBi0+fSIGgYKWnxLBwHmOrpq89kVAejlL123beGtc9C/eHLjfKGuQWwouYyqT1XQQBDqIKcdUYpEHlipMLV+gfY6WQVs1ZMdF3sMVJLgX32Aye4SbEzSTmySpDclUzFQdWkeWaUrwIZR3FL+SaU/MScJRwubAl8V8uYcx0+z6VSBCiKs5Yy/hnNVeX2IogWmOWtNCnilyt/kRwY43yU7P2RwZo+AB6Lo2BHVeltrOKRohRLbn0M3BrlZQridqjTnZIr/XwzcQjIKkq7P9M1tzEdBrek3WnY/wNbc+UU+xfzR6GThjF20ATjGoAREea0+x+qGeWcxWb0q/ytWcKi1g</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></Package>

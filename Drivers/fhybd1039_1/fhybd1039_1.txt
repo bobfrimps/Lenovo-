@@ -1,0 +1,1162 @@
+                                                                   Revision:01
+--------------------------------------------------------------------------------
+Software Name	        ThinkPad Hybrid USB-C with USB-A Dock Firmware for Windows 
+
+Operating Systems	
+
+			Microsoft Windows 10 64-bit (1809 or later)			
+			Microsoft Windows 11 (21H2 or later)
+			
+
+			Refer to marketing materials to find out what computer
+			models support Operating Systems.
+
+Firmware Update Tool V1.0.39                        fhybd1039	              2024/01/05
+	 FW package: V1.0.39
+	 PD CCG4 version: d2.0.2.78
+	 PD Billboard version: 0.1.0.38
+	 HUB 1 FW version: 5563
+	 HUB 2 FW version: 5564
+	 
+	 Different Solution:
+	 PD version: 0C.06.16.30
+	 HUB 1 FW version: 5673
+	 HUB 2 FW version: 5584
+	 
+                 
+Support Device		ThinkPad Hybrid USB-C with USB-A dock
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package updates the firmware (ThinkPad Hybrid USB-C with USB-A dock) to update the
+  following chip of dock.
+
+  Chip                     	 
+  ------------------------------------------------------------------------------
+  USB HUB
+  PD/Billboard
+
+  Refer to marketing materials to find out what computer models support which
+  dock.
+
+  If this package has been installed, this package will fix problems, and add new 
+  functions, or expand functions as noted below.
+
+  This program is language-independent and can be used with any language system.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+Firmware Update Tool Versions	V1.0.39 (Tool package version)
+
+[Important updates]
+  Enhance the compatibility of PD.
+
+[New functions or enhancements]
+  Nothing. 
+
+[Problem fixes]
+  Fixed a charging bug while using Lenovo Vantage.
+
+--------------------------------------------------------------------------------
+INSTALLATION INSTRUCTIONS
+
+Notes:
+- If your dock runs satisfactorily now, it may not be necessary to update
+  the software. To determine if you should update the software, refer to the
+  Version Information section.
+
+
+  Method 1: Package Install
+  (Install option) 
+-- Installation by the one-click update:
+	1. Connect the dock to PC/NB.
+	2. Double-click fhybd1039_1.exe .
+	3. Follow the instructions on the screen, and choose "Install".
+	4. Press the "Update" button of the FW update tool.
+
+  Method 2: Silent Install
+  (Extract only option)
+
+-- Installation by command-line manually update:
+	1. Connect the dock to PC/NB.
+	2. Double-click fhybd1039_1.exe .
+	3. Follow the instructions on the screen, and choose "Extract only".
+	4. In the "Select Destination Location" window, click Extract. If you would like to select a different folder, click Browse.
+	5. In the Ready to Install window, click Install. All the necessary files will be
+	extracted to the folder you selected. (Default: C:\DRIVERS\HybridDockFwUpdateTool\[YYYYDDMM].[TIMESTAMP])
+	
+-- Silent command list
+    /? : Display this help message
+    /v : Show FW version on screen
+    /u : Update firmware
+    /s : Silent mode
+    /f : Force update firmware
+
+
+-- Open a Command Prompt with Administrator privileges for the following --
+
+-- Silent FW version check by command:
+
+	For checking current FW version usage: [File extracted folder\]Fwupdate.exe /v
+
+    Return Code: 
+        1: Checking version successfully.
+       -1: Checking version failed due to dock not found or other unknown reason.
+     -101: Checking version failed due to failure on USB hub chip.
+     -102: Checking version failed due to failure on PD/Billboard chip.	   
+	 
+-- Silent FW update by command:
+
+	For updating FW usage: [File extracted folder\]Fwupdate.exe /u
+	(Follow prompt instructions on the screen to complete the update.)
+	
+	For updating FW without prompt usage: [File extracted folder\]Fwupdate.exe /u /s
+
+	For force updating FW in silent mode usage: [File extracted folder\]Fwupdate.exe /u /s /f 
+     
+    Return Code:
+         0: Updating version successfully.
+         1: Did not start updating process due to firmware version is newer or equal.
+        -1: Updating version failed due to dock not found or other unknown reason.
+    0x8001: The update failed due to failure on USB hub chip.
+    0x8002: The update failed due to failure on PD/Billboard chip.
+    0x9003: Battery < 25%. System battery power is less than 25%.
+    036865: This process requires power to avoid an accidental power-off during an update.
+	
+------------------------------------------------------------------------------------------
+
+SCCM Check version and Update
+==============================
+-- Silent mode check version by command:
+     1. Connect the dock to PC/NB.
+     2. [File download folder\]fhybd1039_1.exe /VERYSILENT /v 
+
+-- Silent mode force update by command:
+     1. Connect the dock to PC/NB.
+     2. [File download folder\]fhybd1039_1.exe /VERYSILENT /u /f
+
+
+Check version return codes for SCCM mode
+========================================
+-- Check Firmware:
+     0: Checking version successfully, firmware update is not needed (dock's firmware is equal to or newer than package's).
+     1: Checking version successfully, firmware update is needed (dock's firmware is older than package's).
+    -1: Checking version failed due to dock not found or other unknown reason.
+
+Update return codes for SCCM mode
+========================================
+-- Update Firmware:
+     0: Updating version successfully.
+     1: Did not start updating process due to firmware version is newer or equal.
+   259: Updating version failed due to dock not found or other unknown reason.
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions have been released to date.
+
+ Tool Version                                           Build ID     Rev.    Issue Date
+-----------------------------------                   -------------  ----   ------------
+Firmware Update tool V1.0.39                           fhybd1039_1           2024/01/05
+	FW package: V1.0.39
+	 PD CCG4 version: d2.0.2.78
+	 PD Billboard version: 0.1.0.38
+	 HUB 1 FW version: 5563
+	 HUB 2 FW version: 5564
+	 
+	Different Solution:
+	 PD version: 0C.06.16.30
+	 HUB 1 FW version: 5673
+	 HUB 2 FW version: 5584	 
+	 
+Firmware Update tool V1.0.38                           fhybd1038_1           2023/09/11
+	FW package: V1.0.38
+	 PD CCG4 version: d2.0.2.74
+	 PD Billboard version: 0.1.0.38
+	 HUB 1 FW version: 5563
+	 HUB 2 FW version: 5564
+	 
+	Different Solution:
+	 PD version: 0C.06.15.30
+	 HUB 1 FW version: 5663
+	 HUB 2 FW version: 5584	 
+	 
+Firmware Update tool V1.0.37                           fhybd1037_1           2023/07/26
+	FW package: V1.0.37
+	 PD CCG4 version: d2.0.2.74
+	 PD Billboard version: 0.1.0.38
+	 HUB 1 FW version: 5563
+	 HUB 2 FW version: 5564
+	 
+	Different Solution:
+	 PD version: 0C.06.15.30
+	 HUB 1 FW version: 5653
+	 HUB 2 FW version: 5584	 
+	 
+Firmware Update tool V1.0.36_2                         fhybd1036_2           2023/04/26
+	FW package: V1.0.36_2
+	 PD CCG4 version: d2.0.2.74
+	 PD Billboard version: 0.1.0.38
+	 HUB 1 FW version: 5563
+	 HUB 2 FW version: 5564
+	 
+	Different Solution:
+	 PD version: 0C.06.13.30
+	 HUB 1 FW version: 5643
+	 HUB 2 FW version: 5584	 
+ 
+Firmware Update tool V1.0.35_v2                        fhybd1035_2           2023/04/21
+	FW package: V1.0.35_v2
+	 PD CCG4 version: d2.0.2.73
+	 PD Billboard version: 0.1.0.38
+	 HUB 1 FW version: 5553
+	 HUB 2 FW version: 5554
+	 
+	Different Solution:
+	 PD version: 0C.06.13.30
+	 HUB 1 FW version: 5603
+	 HUB 2 FW version: 5584	
+
+Firmware Update tool V1.0.35                           fhybd1035             2022/08/16
+	FW package: V1.0.35
+	 PD CCG4 version: d2.0.2.73
+	 PD Billboard version: 0.1.0.38
+	 HUB 1 FW version: 5553
+	 HUB 2 FW version: 5554
+	 
+	Different Solution:
+	 PD version: 0C.06.13.30
+	 HUB 1 FW version: 5603
+	 HUB 2 FW version: 5584	 
+
+Firmware Update tool V1.0.33                           fhybd1033             2022/05/30
+	FW package: V1.0.33
+	 PD CCG4 version: d2.0.2.72
+	 PD billboard version: 0.1.0.38
+	 HUB 1 FW version: 5553
+	 HUB 2 FW version: 5554
+
+Firmware Update tool V1.0.32                           fhybd1032             2022/03/23
+	FW package: V1.0.32
+	 PD CCG4 version: d2.0.2.68
+	 PD billboard version: 0.1.0.38
+	 HUB 1 FW version: 5553
+	 HUB 2 FW version: 5554 
+
+Firmware Update tool V1.0.31                           fhybd1031             2021/11/30
+	FW package: V1.0.31
+	 PD CCG4 version: d2.0.2.68
+	 PD billboard version: 0.1.0.38
+	 HUB 1 FW version: 5543
+	 HUB 2 FW version: 5544
+
+Firmware Update tool V1.00.30                          fhybd22	             2021/07/01
+	FW package: V1.0.0.29
+	 PD CCG4 version: d2.0.2.68
+	 PD billboard version: 0.1.0.38
+	 HUB 1 FW version: 5543
+	 HUB 2 FW version: 5544
+
+Firmware Update tool V1.00.29                          fhybd18	             2020/08/21
+	FW package: V1.0.0.29
+	 PD CCG4 version: d2.0.2.68
+	 PD billboard version: 0.1.0.38
+	 HUB 1 FW version: 5543
+	 HUB 2 FW version: 5544	
+
+Firmware Update tool V1.00.29                          fhybd17	             2020/07/28
+	FW package: V1.0.0.29
+	 PD CCG4 version: d2.0.2.68
+	 PD billboard version: 0.1.0.38
+	 HUB 1 FW version: 5543
+	 HUB 2 FW version: 5544
+
+Firmware Update tool V1.00.29                          fhybd16	             2020/06/23
+	FW package: V1.0.0.29
+	 PD CCG4 version: d2.0.2.68
+	 PD billboard version: 0.1.0.38
+	 HUB 1 FW version: 5543
+	 HUB 2 FW version: 5544
+
+Firmware Update Tool V1.00.25                          fhybd13	             2019/08/12
+	FW package: V1.0.0.25
+	PD CCG4 version: d2.0.2.63
+	PD billboard version: 0.1.0.33
+	HUB 1 FW version: 5503
+	HUB 2 FW version: 5504
+
+Firmware Update Tool V1.00.15                          fhybd12	             2019/03/22
+	FW package: V1.00.15
+	PD CCG4 version: d2.0.2.58
+	PD billboard version: 0.1.0.30
+	HUB 1 FW version: 5503
+	HUB 2 FW version: 5504
+
+Firmware Update Tool V1.00.13                          fhybd11	             2019/02/20
+	FW package: V1.00.10
+	PD CCG4 version: d2.0.2.55
+	PD billboard version: 0.1.0.30
+	HUB 1 FW version: 0a53
+	HUB 2 FW version: 0a54
+
+Firmware Update Tool V1.00.11                          fhybd10	             2018/12/20
+	FW package: V1.00.10
+	PD CCG4 version: d2.0.2.55
+	PD billboard version: 0.1.0.30
+	HUB 1 FW version: 0a53
+	HUB 2 FW version: 0a54
+
+Firmware Update Tool V1.00.10 (MP version)             fhybd07	             2018/11/21
+	FW package: V1.00.10
+	PD CCG4 version: d2.0.2.55
+	PD billboard version: 0.1.0.30
+	HUB 1 FW version: 0a53
+	HUB 2 FW version: 0a54
+
+	 
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of firmware, refer to the Determining which version is
+  installed section.
+
+--------------------------------------------------------------------------------
+Summary of Changes
+
+  Where: <   >        Package version number
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+<Tool V1.0.39> (fhybd1039_1) 
+- [FW fixes]
+	PD CCG4 version: d2.0.2.78
+	Different Solution:
+    USB HUB FW:
+    [5673 (Tier1 Hub)] 2024/01/05
+	 PD version: 0C.06.16.30
+      1. Enhance the compatibility of PD.
+      2. Fixed a charging bug while using Lenovo Vantage.
+
+- (New) add support models
+Yoga Pro7 14APH8(#82Y8)
+Slim Pro7 14APH8(#83AW)
+ThinkBook 14 Gen 5 IRL (21JC)
+ThinkBook 15 Gen 5 IRL (21JD)
+X1 Carbon Gen12(#21KC,21KD)
+ThinkPad X13s Gen 1(#21BX,21BY)
+Lenovo 500e Yoga Chromebook Gen 4(#82W4,82W5)
+LOQ 15IRH8BR(#83EU)
+IdeaPad Pro5 14 IMH9
+
+
+<Tool V1.0.38> (fhybd1038_1) 
+- [FW fixes]
+	Different Solution:
+    USB HUB FW:
+    [5663 (Tier1 Hub)] 2023/09/11
+      1. Enhance the compatibility of USB HUB.
+	  
+- (New) add support models
+X1 Carbon G11(#21HN)
+X1 Carbon G11(#21HM)
+X1 Yoga G8(#21HR)
+X1 Yoga G8(#21HQ)
+X13 AMD Gen 4(#21J4)
+X13 AMD Gen 4(#21J3)
+X13 Gen 4(#21EY)
+X13 Gen 4(#21EX)
+X13 Yoga Gen 4(#21F2)
+X13 Yoga Gen 4(#21F3)
+L13 Clam G4(#21FG)
+L13 Clam G4(#21FH)
+L13 Yoga G4(#21FK)
+L13 Yoga G4(#21FJ)
+ThinkPad E14 Gen5(#21JR, 21JS)
+ThinkPad E16 Gen1(#21JT, 21JU)	  
+ThinkPad T14s AMD Gen4 (#21F8,21F9)
+ThinkPad X13 AMD Gen 4(#21J3,21J4)
+IdeaPad Duet 3 11IAN8(#82XK)
+IdeaPad Slim 5 16IAH8(#83BG)
+IdeaPad Duet5 12IRU8(#83B3)
+ThinkBook 14s Yoga G3 IRU(#21JG)
+P16v AMD Gen 1 (#21FE,21FF)
+Pegasus-2 (Z13 Gen2, MT: 21JV,21JW)
+Medusa-2 (Z16 Gen2, MT: 21JX, 21JY)
+Valkyrie (X1 Fold 16, MT: 21ES, 21ET)
+K14 G2(21G0,21G1)
+ThinkBook 16p Gen 4 IRH(#21J8)
+ThinkBook Plus Gen 4 IRU(#21JJ)
+IdeaPad Pro 5 16APH8 (#83AR)
+Thinkbook 14 G6 ABP(#21KJ)
+Thinkbook 16G6 IRL(#21KH)
+Thinkbook 14G6 IRL(#21KG)
+Thinkbook 16 G6 ABP(#21KK)
+Yoga Slim7 14APU8(83AA)
+Yoga Slim6 14APU8(82X3)
+Yoga Slim6 14IRH8(83E0)
+	  
+	  
+<Tool V1.0.37> (fhybd1037_1) 
+- [FW fixes]
+	Different Solution:
+    USB HUB FW:
+    [5653 (Tier1 Hub)] 2023/07/26
+      1. Enhance the compatibility of USB HUB.
+	  
+    VLI PD FW:
+    [0C.06.15.30] 2023/07/26
+      1. Fixed host fails to wake up from S4 issue.
+      2. Removed check display port mode VDM.  
+
+<Tool V1.0.36_2> (fhybd1036_2) 
+- [FW fixes]
+    Cypress PD FW:
+    [V0.2.74] 2023/02/03
+      1. Enhance the compatibility of Cypress PD.
+      
+    USB HUB FW:
+    [5563 (Tier1 Hub)/5564 (Tier2 Hub)] 2023/04/14
+      1. Enhance the compatibility of USB HUB.
+	  
+	Different Solution:
+    [5643 (Tier1 Hub)] 2023/04/10
+      1. Fixed Always on USB port.
+      2. Enhance the compatibility of USB HUB.
+      
+<Tool V1.0.35_v2> (fhybd1035_2) Revision:06
+- [Readme wording update]
+      1. The wording of "TVSU Tool" in the version information section is changed to "Firmware Update Tool"
+
+<Tool V1.0.35_v2> (fhybd1035_2) 
+- [Tool fixes]
+      1. Fixed package extracting folder and driver installing method for security enhancement. 
+
+<Tool V1.0.35> (fhybd1035) 
+
+- (New) add support models
+
+T14 AMD Gen 4(#21K3,21K4)
+T16 AMD Gen 2(#21K7,21K8)
+T16 Gen 2(21HH,21HJ)
+T14 Gen 4(#21HD,21HE)
+T16 Gen 1 AMD(#21CH,21CJ)
+P14s AMD Gen 4(#21K5,21K6)
+P16s AMD Gen 2(#21K9,21KA)
+P16 Gen 2(#21FA,21FB)
+P14s Gen 4(#21HF,21HG)
+P16s Gen 2(#21HK,21HL)
+P14s AMD G3(#21J5,21J6)
+P16s Gen 1 AMD(#21CK,21CL)
+E14 Gen 5(#21JK,21JL)
+E16 Gen 1(#21JN,21JQ)
+Yoga 7 14IRL8(#82YL)
+Yoga 7 16IRL8(#82YN)
+Yoga Pro 7 14IRH8(#82Y7)
+Yoga Pro 7 14ARP8(#83AU)
+Slim Pro 7 14ARP8(#83AX)
+IdeaPad Pro 5 14IRH8(#83AL)
+
+13w Yoga(#82S1,82S2)
+Lenovo 14e Chromebook Gen 3(#82W6,82W7)
+300w Gen 4(#82VM,82VN)
+500w Gen 4(#82VQ,82VR)
+E14 AMD Gen 3(#20Y7,20YD,20YE,20YF)
+E14 Gen 4(#21E3,21E4)
+E15 AMD Gen 3(#20YG,20YH,20YJ,20YK)
+E15 Gen 4(#21E6,21E7)
+IdeaPad 1 14AMN7(#82VF)
+IdeaPad 1 14IJL7(#82LV)
+IdeaPad 1 15AMN7(#82VG)
+IdeaPad 1 15IJL7(#82LX)
+IdeaPad 3 14ALC6(#82KT)
+IdeaPad 3 14ITL05(#81X7)
+IdeaPad 3 14ITL06(#82H7)
+IdeaPad 3 15ALC6(#82KU,82MF)
+IdeaPad 3 15ITL05(#81X8)
+IdeaPad 3 15ITL06(#82H8)
+IdeaPad 3 15ITL6(#82MD)
+IdeaPad 3 17ALC6(#82KV)
+IdeaPad 3 17ITL06(#82H9)
+IdeaPad 5 14IAL7(#82SD)
+IdeaPad 5 15IIL05(#81YK)
+IdeaPad 5 15ITL05(#82FG)
+IdeaPad 5 Pro 14ITL6(#82L3)
+IdeaPad 5 Pro 16ACH6(#82L5)
+IdeaPad 5 Pro 16IHU6(#82L9)
+IdeaPad Creator 5 16ACH6(#82L6)
+IdeaPad Flex 5 14ABR8(#82XX)
+IdeaPad Flex 5 14ALC05(#82HU)
+IdeaPad Flex 5 14ALC7(#82R9)
+IdeaPad Flex 5 14IRU8(#82Y0)
+IdeaPad Flex 5 15ALC05(#82HV)
+IdeaPad Flex 5 16ABR8(#82XY)
+IdeaPad Flex 5 16ALC7(#82RA)
+IdeaPad Flex 5 16IRU8(#82Y1)
+IdeaPad L3i 15ITL6(#82HL)
+IdeaPad Pro 5 16ARP8(#83AS)
+IdeaPad Slim 3 14IAN8(#82XA)
+IdeaPad Slim 3 15IAN8(#82XB)
+IdeaPad Slim 5 14IRL8(#82XD)
+IdeaPad Slim 5 16IRL8(#82XF)
+IdeaPad Slim 7 14ARE05(#82A5)
+IdeaPad Slim 7 15IIL05(#82AD)
+Lenovo Slim 7 14IAP7(#82SX)
+Lenovo Slim 7 14IRP8(#83A4)
+IdeaPad Slim 7 Pro 16ACH6(#82QR)
+L14 Gen 4 AMD(#21H5,21H6)
+X1 Nano Gen 3(#21K1,21K2)
+L14 AMD Gen 4(#12H5,21H6)
+L15 AMD Gen 4(#21H7,21H8)
+100w G4(#82VK,82VL)
+13w Yoga G2(#82YR,82YS)
+L14 Gen 4(#21H1,21H2)
+L15 Gen 4(#21H3,21H4)
+Lenovo Flex 7 14IAU7(#82VC)
+Lenovo IdeaPad S145(#81UT ,81V7)
+Lenovo IdeaPad S540(#81XA ,82H1)
+P15v AMD Gen 3(#21EM,21EN)
+ThinkBook 13s Gen 5 IRP(#21JA)
+Lenovo V14 Gen 4 IAN(#82YV)
+Lenovo V15 Gen 4 IAN(#82YW)
+Lenovo Yoga Slim7 14ARE05(#82A2)
+Lenovo Yoga Slim7 14IIL05(#82A1,82A4)
+Lenovo Yoga Slim7 15IIL05(#82AA)
+ThinkBook 13s G4 IAP(#21AR)
+ThinkBook 14 G4 ABA(#21DK)
+ThinkBook 14 G4+ IAP(#21CX)
+ThinkBook 15 G4 ABA(#21DL)
+ThinkBook 16 G4+ IAP(#21CY)
+ThinkCentre M910z(#10NR,10NS,10NT,10NU,10NV,10NW)
+T14 AMD Gen 3(#21CF,21CG)
+T14s AMD Gen 3(#21CQ,21CR)
+X 13 2nd Gen(#20J1,20J2)
+X1 Extreme Gen 5(#21DE,21DF)
+X13 AMD Gen 3(#21CM,21CN)
+P1 Gen 5(#21DC,21DD)
+P16 Gen 1(#21D6,21D7)
+Slim 9 14ITL5(#82D2)
+Lenovo S540(#82DL)
+Yoga 6 13ABR8(#83B2)
+Yoga Duet 7(#82AS)
+Yoga Duet 7 13ITL6(#82MA)
+Yoga Duet IML 2020(#82E9)
+Yoga Slim 6 14IAP8(#82WU)
+Yoga Slim 6 14IRP8(#82WV)
+Yoga Slim 7 14ITL05p M(#82FX)
+Yoga Slim 7 Pro 14ACH5 D(#82NJ)
+Yoga Slim 7 Pro 14ACH5 OD(#82NK)
+Yoga Slim 7 Pro 14ARH5(#82LA)
+Yoga Slim 7 Pro 14IAH7(#82UT)
+Yoga Slim 7 Pro 14IAP7(#82SV)
+Yoga Slim 7 Pro 14IHU5 O(#82NH)
+Yoga Slim 7 Pro 14IHU5(#82NC)
+Yoga Slim 9 14ITL5(#82D1)
+
+
+<Tool V1.0.35> (fhybd1035) 
+- [FW fixes]
+    Cypress PD FW:
+    [V0.2.73] 2022/07/08
+      1. Enhance compatibility of Richtek buck boost.
+      2. Different solution support.
+	  
+- (New) add support models
+ThinkBook Plus Gen 3 IAP(#21EL)
+ThinkBook 16p NX ARH(#21EV)
+Gaming3 16ARH7(#82SC)
+Duet5 12IAU7(#82TQ)
+Z16 Gen 1(#21D4,21D5) 
+Z13 Gen 1(#21D2,21D3)
+
+ThinkBook 16p Gen 3 ARH(#21EK)
+Yoga Slim 7 Pro 16IAH7(#82VA)	
+Yoga Slim 7 Pro 16ARH7(#82UW)
+Slim 7 16ARH7(#82UX)
+Slim 7 16IAH7(#82VB)
+
+<Tool V1.0.33> (fhybd1033) 
+- [FW fixes]
+    Cypress PD FW:
+    [V0.2.72] 2022/05/12
+      1. Add Richtek buck boost support.
+	  
+- (New) add support models
+ThinkBook 13x Gen2 IAP(#21AT)
+ThinkBook 13s Gen 4 ARB(#21AS)
+ThinkBook 14 Gen 4+ ARA(#21D0)	
+ThinkBook 16 Gen 4+ ARA(#21D1)
+Lenovo V14 Gen 2 IJL(#82QX)	
+Lenovo V15 Gen 2 IJL(#82QY)
+Lenovo V15 G1 IML Brazil(#82NQ)	
+Lenovo V14-ALC(#82KC)	
+Lenovo V15-ALC(#82KD)	
+Lenovo V14 G1 IML(#82NA)	
+Lenovo V15 G1 IML(#82NB)		
+Yoga Slim 9 14IAP7(#82T0)	
+Yoga Slim 7 ProX 14IAH7(#82TK)
+IdeaPad Flex 5 14IAU7(#82R7)	
+IdeaPad Flex 5 16IAU7(#82R8)
+Slim 9 14IAP7(#82T1)
+Slim 7 ProX 14IAH7(#82V1)
+
+<Tool V1.0.32> (fhybd1032) 
+- [Tool fixes]
+	1. Added support for VL822.
+	
+- (New) add support models
+P14s Gen 3(#21AK,21AL)	
+P16s Gen 1(#21BT,21BU)
+T16 Gen 1(#21BV,21BW)
+T14 Gen 3(#21AH,21AJ)
+L15 AMD Gen 3(#21C7,21C8)	
+L14 AMD Gen 3(#21C5, 21C6)	
+L13 Yoga AMD G3(#21BB,21BC)	
+L13 Clam AMD G3(#21B9,21BA)
+X1 Yoga Gen 7(#21CD,21CE)	
+X1 Carbon Gen 10(#21CB,21CC)
+	
+X1 Nano G2(#21E8,21E9) 
+X13 Gen 3(#21BN,21BQ)
+T14s Gen 3(#21BR,21BS)
+Lenovo V14-ITL(#82KA,82NM) 
+Lenovo V15-ITL(#82KB,82ME)
+Gaming3 16IAH7(#82SA)
+Gaming3 15IAH7(#82S9)
+
+X13 Yoga Gen 3(#21AW,21AX)
+L13 Yoga G3(#21B5,21B6) 
+L13 Clam G3(#21B3,21B4) 
+L15 Gen 3((#21C3,21C4) 
+L14 Gen 3(#21C1,21C2)
+T15p Gen 3(#21DA,21DB)
+P15v Gen 3(#21D8,21D9)
+E15 AMD Gen 4(#21ED,21EE) 
+E14 AMD Gen 4(#21EB,21EC)
+IdeaPad 5 14ABA7(#82SE)
+Gaming3 15ARH7(#82SB)
+
+<Tool V1.0.31> (fhybd1031) 
+- [Tool fixes]
+	1. Removed unused and fixed few commands in console mode. 
+	2. Shortened version numbers.
+- (New) add support models
+Yoga Slim 7 Pro 16ACH6(#82QQ)
+Yoga Slim 7 Carbon 14ACN6(#82L0)
+X1 Fold G1(#20RK,20RL)
+X1 Extreme Gen4(#20Y5,20Y6)
+P1 Gen4(#20Y3,20Y4)
+K14 AMD Gen1(#21CU,21CV)
+
+<Tool V1.00.30> (fhybd22) 
+- [Tool fixes]
+	1. Fixed modern standby issue of USB HUB. 
+	2. Fixed Cypress MFG Driver issue. 
+
+<Tool V1.00.29> (fhybd18) 
+- [Tool fixes]
+	1. Popup window removed.
+
+<Tool V1.00.29> (fhybd17) 
+- [Tool New]
+	1. New function added in fhybd17.exe, after extracting fhybd17.exe and then 
+	   execute "Fwupdate.exe /ShowVer" : For showing Dock and Package version.
+
+<Tool V1.00.29> (fhybd16) 
+- [Tool fixes]
+	1. Repack fhybd15 with other installer tool.
+
+<Tool V1.00.29> (fhybd15) 
+- [Tool fixes]
+      1. Follow Lenovo request to add command-line Reset function with "Fwupdate.exe /r".
+      2. Bug fixed: modified Win7 OS driver for update fail issue in LNV X1 Carbon platform.
+      3. Follow Lenovo request to remove "press key to continue" message in silent mode.
+      4. Follow Lenovo request to support security patched script.
+ 
+    USB HUB FW:
+    [5543 (Tier1 Hub) / 5544 (Tier2 Hub)] 2020/1/3
+     1. Fixed external monitor attached on dock no display or light up slowly if connected through DP to DVI dongle(lenovo PN43N9159).
+      2. Fixed USB2 doesn't functional intermittently when work with ThinkPad X280.
+      3. Fixed USB hub FW update failure while full loading when work with ThinkPad T480.
+       
+    Cypress PD FW:
+    [V0.2.68] 2019/11/13
+      1. Fixed external monitor attached on dock no display or light up slowly if connected through DP to DVI dongle(lenovo PN43N9159).
+      2. Optimize LED breathe more smoothly.
+     
+    Cypress Billboard FW: 
+    [BB R38] 2020/01/13
+      1. Fixed external monitor attached on dock no display or light up slowly if connected through DP to DVI dongle(lenovo PN43N9159).
+
+<Tool V1.00.25> (fhybd13) 
+- [FW fixes]
+	Cypress FW:
+	 [V0.2.59] 2019/04/25
+	 1. Only allow 600ms delay for SYSTEM_PWR_CTRL from S3/S4/S5 resume to S0 with Type-C port.
+	 [V0.2.60] 2019/05/14
+	 1. Report Billboard Disconnect Event to Billboard while Upstream port disconnect.
+     [V0.2.61] 2019/06/17
+     1. Avoid System Power pin fault toggle while receive fast S4/S5 System Stage VDM from Host.
+	 [V0.2.62] 2019/07/19
+	 1. Implement Lenovo Hybrid specified Y-cable product support.
+	 [V0.2.63] 2019/07/30
+	 1. Add 1s OCP feature delay for 5V@0A contract per Lenovo requisition[Y-Cable] to fix Host over draining current issue which violate PD specification.		
+
+	 Billboard:
+	 [BB R33] 2019/5/13
+	 Remove pull-up resistor on D+ line while receive BB Disconnect Event from CCG4 during US detach.
+	 [BB R32] 2019/5/8
+	 Modify the configuration that VBUS line is supplied with 3.3V rather than 5V.
+
+<Tool V1.00.15> (fhybd12) 
+- [FW fixes]
+	Cypress FW:
+	 [V0.2.56] 2018/11/28
+	 1. Modify CLIND monitor logic from always monitoring to only start the monitor logic while Up-stream port connected.
+	 [V0.2.57] 2018/12/11
+	 1. Remove CLIND monitor feature disable logic in workaround for S4 resume NCP-81239 reset issue. 
+	 [V0.2.58] 2019/01/24
+	 1. Add 600ms delay for SYSTEM_PWR_CTRL for every Upstream port connection to patch Realtek Host VBUS toggle behavior.
+	 
+	USB HUB FW:
+	 [0a5x] 2018/04/02
+	 1. Fixed Lenovo power band cannot change in AOU port.
+	 2. Fixed Kingston pen drive cannot detect in S3/S4 burn in test.
+
+<Tool V1.00.13> (fhybd11) 
+- [Problem fixes] Remove USB selective suspend setting
+
+<Tool V1.00.11> (fhybd10) 
+- [Problem fixes] Fixed USB selective suspend setting
+
+<Tool V1.00.10> (fhybd07) 
+- [Important] Mass production version
+
+--------------------------------------------------------------------------------
+LIMITATIONS
+
+  Nothing
+  
+--------------------------------------------------------------------------------
+SUPPORT MODELS
+Yoga Pro7 14APH8(#82Y8)
+Slim Pro7 14APH8(#83AW)
+ThinkBook 14 Gen 5 IRL (21JC)
+ThinkBook 15 Gen 5 IRL (21JD)
+X1 Carbon Gen12(#21KC,21KD)
+ThinkPad X13s Gen 1(#21BX,21BY)
+Lenovo 500e Yoga Chromebook Gen 4(#82W4,82W5)
+LOQ 15IRH8BR(#83EU)
+IdeaPad Pro5 14 IMH9
+
+X1 Carbon G11(#21HN)
+X1 Carbon G11(#21HM)
+X1 Yoga G8(#21HR)
+X1 Yoga G8(#21HQ)
+X13 AMD Gen 4(#21J4)
+X13 AMD Gen 4(#21J3)
+X13 Gen 4(#21EY)
+X13 Gen 4(#21EX)
+X13 Yoga Gen 4(#21F2)
+X13 Yoga Gen 4(#21F3)
+L13 Clam G4(#21FG)
+L13 Clam G4(#21FH)
+L13 Yoga G4(#21FK)
+L13 Yoga G4(#21FJ)
+ThinkPad E14 Gen5(#21JR, 21JS)
+ThinkPad E16 Gen1(#21JT, 21JU)	
+ThinkPad T14s AMD Gen4 (#21F8,21F9)
+ThinkPad X13 AMD Gen 4(#21J3,21J4)
+IdeaPad Duet 3 11IAN8(#82XK)
+IdeaPad Slim 5 16IAH8(#83BG)
+IdeaPad Duet5 12IRU8(#83B3)
+ThinkBook 14s Yoga G3 IRU(#21JG)
+P16v AMD Gen 1 (#21FE,21FF)
+Pegasus-2 (Z13 Gen2, MT: 21JV,21JW)
+Medusa-2 (Z16 Gen2, MT: 21JX, 21JY)
+Valkyrie (X1 Fold 16, MT: 21ES, 21ET)
+K14 G2(21G0,21G1)
+ThinkBook 16p Gen 4 IRH(#21J8)
+ThinkBook Plus Gen 4 IRU(#21JJ)
+IdeaPad Pro 5 16APH8 (#83AR)
+Thinkbook 14 G6 ABP(#21KJ)
+Thinkbook 16G6 IRL(#21KH)
+Thinkbook 14G6 IRL(#21KG)
+Thinkbook 16 G6 ABP(#21KK)
+Yoga Slim7 14APU8(83AA)
+Yoga Slim6 14APU8(82X3)
+Yoga Slim6 14IRH8(83E0)
+
+T14 AMD Gen 4(#21K3,21K4)
+T16 AMD Gen 2(#21K7,21K8)
+T16 Gen 2(21HH,21HJ)
+T14 Gen 4(#21HD,21HE)
+T16 Gen 1 AMD(#21CH,21CJ)
+P14s AMD Gen 4(#21K5,21K6)
+P16s AMD Gen 2(#21K9,21KA)
+P16 Gen 2(#21FA,21FB)
+P14s Gen 4(#21HF,21HG)
+P16s Gen 2(#21HK,21HL)
+P14s AMD G3(#21J5,21J6)
+P16s Gen 1 AMD(#21CK,21CL)
+E14 Gen 5(#21JK,21JL)
+E16 Gen 1(#21JN,21JQ)
+Yoga 7 14IRL8(#82YL)
+Yoga 7 16IRL8(#82YN)
+Yoga Pro 7 14IRH8(#82Y7)
+Yoga Pro 7 14ARP8(#83AU)
+Slim Pro 7 14ARP8(#83AX)
+IdeaPad Pro 5 14IRH8(#83AL)
+
+13w Yoga(#82S1,82S2)
+Lenovo 14e Chromebook Gen 3(#82W6,82W7)
+300w Gen 4(#82VM,82VN)
+500w Gen 4(#82VQ,82VR)
+E14 AMD Gen 3(#20Y7,20YD,20YE,20YF)
+E14 Gen 4(#21E3,21E4)
+E15 AMD Gen 3(#20YG,20YH,20YJ,20YK)
+E15 Gen 4(#21E6,21E7)
+IdeaPad 1 14AMN7(#82VF)
+IdeaPad 1 14IJL7(#82LV)
+IdeaPad 1 15AMN7(#82VG)
+IdeaPad 1 15IJL7(#82LX)
+IdeaPad 3 14ALC6(#82KT)
+IdeaPad 3 14ITL05(#81X7)
+IdeaPad 3 14ITL06(#82H7)
+IdeaPad 3 15ALC6(#82KU,82MF)
+IdeaPad 3 15ITL05(#81X8)
+IdeaPad 3 15ITL06(#82H8)
+IdeaPad 3 15ITL6(#82MD)
+IdeaPad 3 17ALC6(#82KV)
+IdeaPad 3 17ITL06(#82H9)
+IdeaPad 5 14IAL7(#82SD)
+IdeaPad 5 15IIL05(#81YK)
+IdeaPad 5 15ITL05(#82FG)
+IdeaPad 5 Pro 14ITL6(#82L3)
+IdeaPad 5 Pro 16ACH6(#82L5)
+IdeaPad 5 Pro 16IHU6(#82L9)
+IdeaPad Creator 5 16ACH6(#82L6)
+IdeaPad Flex 5 14ABR8(#82XX)
+IdeaPad Flex 5 14ALC05(#82HU)
+IdeaPad Flex 5 14ALC7(#82R9)
+IdeaPad Flex 5 14IRU8(#82Y0)
+IdeaPad Flex 5 15ALC05(#82HV)
+IdeaPad Flex 5 16ABR8(#82XY)
+IdeaPad Flex 5 16ALC7(#82RA)
+IdeaPad Flex 5 16IRU8(#82Y1)
+IdeaPad L3i 15ITL6(#82HL)
+IdeaPad Pro 5 16ARP8(#83AS)
+IdeaPad Slim 3 14IAN8(#82XA)
+IdeaPad Slim 3 15IAN8(#82XB)
+IdeaPad Slim 5 14IRL8(#82XD)
+IdeaPad Slim 5 16IRL8(#82XF)
+IdeaPad Slim 7 14ARE05(#82A5)
+IdeaPad Slim 7 15IIL05(#82AD)
+Lenovo Slim 7 14IAP7(#82SX)
+Lenovo Slim 7 14IRP8(#83A4)
+IdeaPad Slim 7 Pro 16ACH6(#82QR)
+L14 Gen 4 AMD(#21H5,21H6)
+X1 Nano Gen 3(#21K1,21K2)
+L14 AMD Gen 4(#12H5,21H6)
+L15 AMD Gen 4(#21H7,21H8)
+100w G4(#82VK,82VL)
+13w Yoga G2(#82YR,82YS)
+L14 Gen 4(#21H1,21H2)
+L15 Gen 4(#21H3,21H4)
+Lenovo Flex 7 14IAU7(#82VC)
+Lenovo IdeaPad S145(#81UT ,81V7)
+Lenovo IdeaPad S540(#81XA ,82H1)
+P15v AMD Gen 3(#21EM,21EN)
+ThinkBook 13s Gen 5 IRP(#21JA)
+Lenovo V14 Gen 4 IAN(#82YV)
+Lenovo V15 Gen 4 IAN(#82YW)
+Lenovo Yoga Slim7 14ARE05(#82A2)
+Lenovo Yoga Slim7 14IIL05(#82A1,82A4)
+Lenovo Yoga Slim7 15IIL05(#82AA)
+ThinkBook 13s G4 IAP(#21AR)
+ThinkBook 14 G4 ABA(#21DK)
+ThinkBook 14 G4+ IAP(#21CX)
+ThinkBook 15 G4 ABA(#21DL)
+ThinkBook 16 G4+ IAP(#21CY)
+ThinkCentre M910z(#10NR,10NS,10NT,10NU,10NV,10NW)
+T14 AMD Gen 3(#21CF,21CG)
+T14s AMD Gen 3(#21CQ,21CR)
+X 13 2nd Gen(#20J1,20J2)
+X1 Extreme Gen 5(#21DE,21DF)
+X13 AMD Gen 3(#21CM,21CN)
+P1 Gen 5(#21DC,21DD)
+P16 Gen 1(#21D6,21D7)
+Slim 9 14ITL5(#82D2)
+Lenovo S540(#82DL)
+Yoga 6 13ABR8(#83B2)
+Yoga Duet 7(#82AS)
+Yoga Duet 7 13ITL6(#82MA)
+Yoga Duet IML 2020(#82E9)
+Yoga Slim 6 14IAP8(#82WU)
+Yoga Slim 6 14IRP8(#82WV)
+Yoga Slim 7 14ITL05p M(#82FX)
+Yoga Slim 7 Pro 14ACH5 D(#82NJ)
+Yoga Slim 7 Pro 14ACH5 OD(#82NK)
+Yoga Slim 7 Pro 14ARH5(#82LA)
+Yoga Slim 7 Pro 14IAH7(#82UT)
+Yoga Slim 7 Pro 14IAP7(#82SV)
+Yoga Slim 7 Pro 14IHU5 O(#82NH)
+Yoga Slim 7 Pro 14IHU5(#82NC)
+Yoga Slim 9 14ITL5(#82D1)
+
+
+
+ThinkBook 16p Gen 3 ARH(#21EK)
+Yoga Slim 7 Pro 16IAH7(#82VA)	
+Yoga Slim 7 Pro 16ARH7(#82UW)
+Slim 7 16ARH7(#82UX)
+Slim 7 16IAH7(#82VB)
+
+ThinkBook Plus Gen 3 IAP(#21EL)
+ThinkBook 16p NX ARH(#21EV)
+Gaming3 16ARH7(#82SC)
+Duet5 12IAU7(#82TQ)
+Z16 Gen 1(#21D4,21D5)	
+Z13 Gen 1(#21D2,21D3)
+ThinkBook 13x Gen2 IAP(#21AT)
+ThinkBook 13s Gen 4 ARB(#21AS)
+ThinkBook 14 Gen 4+ ARA(#21D0)	
+ThinkBook 16 Gen 4+ ARA(#21D1)
+Lenovo V14 Gen 2 IJL(#82QX)	
+Lenovo V15 Gen 2 IJL(#82QY)
+Lenovo V15 G1 IML Brazil(#82NQ)	
+Lenovo V14-ALC(#82KC)	
+Lenovo V15-ALC(#82KD)	
+Lenovo V14 G1 IML(#82NA)	
+Lenovo V15 G1 IML(#82NB)		
+Yoga Slim 9 14IAP7(#82T0)	
+Yoga Slim 7 ProX 14IAH7(#82TK)
+IdeaPad Flex 5 14IAU7(#82R7)	
+IdeaPad Flex 5 16IAU7(#82R8)
+Slim 9 14IAP7(#82T1)
+Slim 7 ProX 14IAH7(#82V1)
+
+X13 Yoga Gen 3(#21AW,21AX)
+L13 Yoga G3(#21B5,21B6) 
+L13 Clam G3(#21B3,21B4) 
+L15 Gen 3((#21C3,21C4) 
+L14 Gen 3(#21C1,21C2)
+T15p Gen 3(#21DA,21DB)
+P15v Gen 3(#21D8,21D9)
+E15 AMD Gen 4(#21ED,21EE) 
+E14 AMD Gen 4(#21EB,21EC)
+IdeaPad 5 14ABA7(#82SE)
+Gaming3 15ARH7(#82SB)
+
+X1 Nano G2(#21E8,21E9) 
+X13 Gen 3(#21BN,21BQ)
+T14s Gen 3(#21BR,21BS)
+Lenovo V14-ITL(#82KA,82NM) 
+Lenovo V15-ITL(#82KB,82ME)
+Gaming3 16IAH7(#82SA)
+Gaming3 15IAH7(#82S9)
+
+P14s Gen 3(#21AK,21AL)	
+P16s Gen 1(#21BT,21BU)
+T16 Gen 1(#21BV,21BW)
+T14 Gen 3(#21AH,21AJ)
+L15 AMD Gen 3(#21C7,21C8)	
+L14 AMD Gen 3(#21C5, 21C6)	
+L13 Yoga AMD G3(#21BB,21BC)	
+L13 Clam AMD G3(#21B9,21BA)
+X1 Yoga Gen 7(#21CD,21CE)	
+X1 Carbon Gen 10(#21CB,21CC)
+K14 AMD Gen1(#21CU,21CV)
+
+Yoga Slim 7 Pro 16ACH6(#82QQ)	
+Yoga Slim 7 Carbon 14ACN6(#82L0)
+X1 Fold G1(#20RK,20RL)
+X1 Extreme Gen4(#20Y5,20Y6)
+P1 Gen4(#20Y3,20Y4)
+
+IdeaPad Slim 7 Carbon 14ACN6(#82L1)
+L13 Yoga AMD Gen2(#21AD,21AE)	
+L13 Clam AMD Gen2(#21AB,21AC)
+T15p Gen2(#21A7,21A8)
+P15v Gen2(#21A9,21AA)	
+ThinkBook 13x ITG(#20WJ)
+ThinkBook 13s G3 ACN(#20YA)
+YG Duet 7 13ITL6 L(#82Q7)
+IP 3 14ADA6(#82KQ)	
+IP 3 15ADA6(#82KR)	
+IP 3 17ADA6(#82KS)
+X13 AMD Gen 2(#20XH,20XJ)
+ThinkBook Plus G2 ITG(#20WH)
+ThinkBook 16p G2 ACH(#20YM)
+Gaming 3 15IHU6(#82K1,82MG)
+ThinkBook 14 G3 ACL(#21A2)
+P14s AMD Gen 2(#21A0,21A1)
+T14s AMD Gen2(#20XF,20XG)
+Lenovo MIIX 520-12IKB(#20M3,20M4)
+X13 Yoga Gen2(#20W8,20W9)
+X13 Gen 2(#20WK,20WL)
+X1 Yoga Gen 6(#20XY,20X0)
+X1 Carbon Gen 9(#20XW,20XX)
+X12 Detachable Gen 1(#20UW,20UV)
+X1 Titanium Yoga Gen 1(#20QA,20QB)
+X1 Nano Gen 1(#20UN,20UQ)
+X1 Carbon 7th Gen(#20QD,20QE,20R1,20R2)
+X1 Yoga 4th Gen(#20QF,20QG,20SA,20SB)
+X390(#20Q0,20Q1,20SC,20SD)
+X1 Yoga 3rd Gen(#20LD,20LE,20LF,20LG)
+X1 Yoga 2nd Gen(#20JF,20JG,20JE,20JD)
+X1 Carbon 5th Gen(#20HQ,20HR,20K3,20K4)
+A285(#20MW,20MX)
+A485(#20MU,20MV)
+X380 Yoga(#20LH, 20LJ,20LK)
+L15 AMD Gen2(#20X7,20X8)
+L14 AMD Gen2(#20X5,20X6)
+L15 Gen2(#20X3,20X4)
+L14 Gen2(#20X1,20X2)
+
+T14 AMD Gen2(#20XK,20XL)
+T14s Gen2(#20WM,20WN)
+T14 Gen 2(HC)(#20W2,20W3)
+T14 Gen 2(#20W0,20W1)
+T15 Gen 2(#20W4,20W5)
+T15g Gen 1(#20UR,20US)
+
+ThinkPad 25(#20K7)
+T470s(#20HF,20HG,20JS,20JT)
+P14s Gen 2(#20VX,20VY)
+P15s Gen 2(#20W6,20W7)
+P15 Gen 1(#20ST,20SU)
+P17 Gen 1(#20SN,20SQ)
+P51s(#20HB,20HC,20JY,20K0)
+E15(#20RD,20RE)
+ThinkBook 15 G3 ACL(#21A4)
+ThinkBook 14s Yoga ITL(#20WE)
+ThinkBook 13s G2 ARE(#20WC)
+ThinkBook 14 G2 ITL(#20VD)
+ThinkBook 15 G2 ITL(#20VE)
+ThinkBook 14 G2 ARE(#20VF)
+ThinkBook 15 G2 ARE(#20VG)
+ThinkBook 13s G2 ITL(#20V9)
+ThinkBook 14s G2 ITL(#20VA)
+ThinkBook 15p IMH(#20V3)
+ThinkPad E15 Gen 2 (20TD,20TE)
+ThinkPad E14 Gen 2 (20TA,20TB)
+ThinkPad R14 Gen 2(20TC)
+ThinkPad P14s Gen 1(20Y1,20Y2)
+ThinkPad P15v Gen 1(20TQ, 20TR)
+ThinkPad T15p Gen 1(20TN, 20TM)
+ThinkPad X13 Gen1(20UF,20UG)
+ThinkPad T14 Gen1(20UD,20UE)
+ThinkPad T14s Gen1(20UH,20UJ)
+ThinkPad E15 Gen 2(20T8,20T9)
+ThinkPad E14 Gen 2(20T6,20T7)
+ThinkPad L14 Gen 1(20U5, 20U6)
+ThinkPad L15 Gen 1(20U7,20U8)
+ThinkPad P73(20QR,20QS)
+ThinkPad P53(20QN,20QQ)
+ThinkPad T570(20H9,20HA,20JW,20JX)
+ThinkPad L15 Gen 1(20U3,20U4)
+ThinkPad L14 Gen 1(20U1,20U2)
+ThinkPad T14s Gen 1(20T0,20T1)
+ThinkPad P15s Gen 1(20T4,20T5)
+ThinkPad T15 Gen 1(20S6,20S7)
+ThinkPad P14s Gen 1(20S4,20S5)
+ThinkPad T14 Gen 1(20S0,20S1,20S2,20S3)
+ThinkPad X13 Gen 1(20T2,20T3)
+ThinkPad X13 Yoga Gen 1(20SX,20SY)
+ThinkPad X1 Yoga 5th Gen(20UB,20UC)
+ThinkPad X1 Carbon 8th Gen(20U9,20UA)
+
+Thinkbook plus(20TG) 
+ThinkBook 14-IIL(20SL)
+ThinkBook 15-IIL(20SM)
+ThinkBook 14-IML(20RV)
+ThinkBook 15-IML(20RW)
+ThinkBook 13s-IML(20RR)
+ThinkBook 14s-IML(20RS)
+ThinkBook 14s-IWL(20RM)
+ThinkBook 13s-IWL(20R9)
+
+ThinkPad11e Yoga Gen 6(20SE,20SF)
+ThinkPad L13(20R5,20R6)
+ThinkPad L13 Yoga(20R3,20R4)
+ThinkPad S2 Yoga 5th (20R8)
+ThinkPad S2 5th Gen(20R7)
+ThinkPad E14(20RA,20RB)
+ThinkPad R14(20RC)
+ThinkPad S3 Gen2(20RG)
+       
+ThinkPad T490(20N2,20N3,20Q9,20QH,20RY,20RX)
+ThinkPad P43s(20RH,20RJ)
+ThinkPad T590(20N4,20N5)
+ThinkPad P53s(20N6,20N7) 
+ThinkPad T490s(20NX,20NY)
+ThinkPad X390 Yoga (ROW)(20NN,20NQ)
+ThinkPad L390(20NR,20NS)
+ThinkPad L390 Yoga(20NT,20NU)
+ThinkPad S2 4th Gen(20NV)
+ThinkPad S2 Yoga 4th Gen(20NW)
+ThinkPad R490(20NA)
+ThinkPad E490(20N8,20N9)
+ThinkPad R590(20ND)
+ThinkPad E590(20NB,20NC)
+ThinkPad E490s(20NG,20QC)
+ThinkPad E495(20NE)
+ThinkPad E595(20NF)
+ThinkPad T495(20NJ,20NK)
+ThinkPad T495s(20QJ,20QK)
+ThinkPad X395(20NL,20NM)
+ThinkPad L590(20Q7,20Q8)
+ThinkPad L490(20Q5,20Q6)
+ThinkPad X280(20KE,20KF)
+ThinkPad T480s(20L7,20L8)
+ThinkPad T580(20L9,20LA)
+ThinkPad P52s(20LB,20LC)
+ThinkPad T480(20L5,20L6)
+ThinkPad X1 Carbon(20KH,20KG)
+ThinkPad X1 Tablet Gen 3(20KJ,20KK)
+ThinkPad S1 4th Gen(PRC)(20LL)
+ThinkPad E485(20KU)
+ThinkPad E585(20KV)
+ThinkPad L380(20M5,20M6)
+ThinkPad S2 3rd Gen(20L1)
+ThinkPad L380 Yoga(20M7,20M8)
+ThinkPad S2 Yoga 3rd Gen(20L2)
+ThinkPad Yoga 11e 5th Gen(20LM,20LN)
+ThinkPad 11e 5th Gen(20LQ,20LR)
+ThinkPad L580(20LW,20LX)
+ThinkPad L480(20LS,20LT)
+Lenovo Tablet 10(20L3,20L4)
+ThinkPad E480(20KN,20KQ)
+ThinkPad R480(PRC Premium)(20KR)
+ThinkPad E580(20KS,20KT)
+ThinkPad Yoga 370(20JH,20JJ)
+ThinkPad S1 3rd Gen PRC(20JK,20JL)
+ThinkPad T470(20HD,20HE,20JM,20JN)
+ThinkPad X1 tablet Gen 2(20JB,20JC)
+ThinkPad T470p(20J6,20J7)
+ThinkPad X270(20HM,20HN,20K5,20K6)
+ThinkPad L470(20J4,20J5,20JU,20JV)
+ThinkPad E470(20H1,20H2)
+ThinkPad T460(20FM,20FN)
+ThinkPad X260(20F5,20F6)
+ThinkPad X250(20CM,20CL)
+L13 Clam G2(#20VH,20VJ)
+L13 Yoga G2(#20VK,20VL)
+
+
+ThinkPad Hybrid USB-C with USB-A Dock(40AF)
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo and ThinkPad are registered trademarks of Lenovo.
+
+* Intel is a registered trademark of Intel Corporation.
+
+* Microsoft, Windows are registered trademarks of Microsoft Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.

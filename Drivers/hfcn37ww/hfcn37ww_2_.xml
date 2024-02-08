@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="BIOS_HFCN" id="hfcn37ww" version="HFCN37WW" hide="False">
+  <Title default="EN">
+    <Desc id="EN">BIOS Update Utility - 10/11</Desc>
+  </Title>
+  <DetectVersion type="File" show="False">
+    <File>%WINDOWS%\explorer.exe</File>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="2" />
+  <Vendor>Lenovo</Vendor>
+  <ReleaseDate>2023-10-26</ReleaseDate>
+  <DiskSpaceNeeded>13740555</DiskSpaceNeeded>
+  <Reboot type="5" />
+  <Brand type="3" />
+  <PackageType type="3" />
+  <Install rc="0,3010,1073807364" rccancel="259,-1,-10" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\GQCN42WW_HFCN37WW.exe -s -b</Cmdline>
+  </Install>
+  <Uninstall />
+  <DetectInstall>
+    <_Bios>
+      <Level>HFCN37W*</Level>
+    </_Bios>
+  </DetectInstall>
+  <Dependencies>
+    <And>
+      <Or>
+        <And>
+          <_OS>
+            <OS>WIN10</OS>
+            <OS>WIN10.*</OS>
+            <OS>WIN10-ENT</OS>
+            <OS>WIN10-ENT.*</OS>
+            <OS>WIN10-PRO</OS>
+            <OS>WIN10-PRO.*</OS>
+          </_OS>
+          <_CPUAddressWidth>
+            <AddressWidth>64</AddressWidth>
+          </_CPUAddressWidth>
+        </And>
+        <And>
+          <_OS>
+            <OS>WIN11</OS>
+          </_OS>
+        </And>
+      </Or>
+      <_Bios>
+        <Level>HFCN20W*</Level>
+        <Level>HFCN21W*</Level>
+        <Level>HFCN22W*</Level>
+        <Level>HFCN23W*</Level>
+        <Level>HFCN24W*</Level>
+        <Level>HFCN25W*</Level>
+        <Level>HFCN26W*</Level>
+        <Level>HFCN27W*</Level>
+        <Level>HFCN28W*</Level>
+        <Level>HFCN29W*</Level>
+        <Level>HFCN30W*</Level>
+        <Level>HFCN32W*</Level>
+        <Level>HFCN33W*</Level>
+        <Level>HFCN34W*</Level>
+        <Level>HFCN35W*</Level>
+        <Level>HFCN36W*</Level>
+      </_Bios>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>gqcn42ww_hfcn37ww.exe</Name>
+        <CRC>D1CA958B1A58635FBF2F03CEE7EEF051ABA7CD0E91C6396CE06D10DAB3B8048C</CRC>
+        <Size>13731224</Size>
+      </File>
+    </Installer>
+    <Readme default="EN">
+      <File id="EN">
+        <Name>hfcn37ww.txt</Name>
+        <CRC>DCAD93ABB2CB8EC81656E26ABD4C55B84383319C457C9D396450812D2729ADA3</CRC>
+        <Size>3613</Size>
+      </File>
+    </Readme>
+  </Files>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>AvZujtgv69IayP21+XdKRR3H1zQ=</DigestValue></Reference></SignedInfo><SignatureValue>O79FB7aafTFV1WPyK9nddkyjgJ32fKPtHUVovtqH1rvnqSKARUQTrkrpYvF5JVCRAQXOBMUErY36G7MvQ27IGVVuPRCJytb4Ub+WtNNYWEsaajO38uhnMX8fAULelXgHmYITZJoW3VI0jMKeg3m0vlqZUgmWnEewwxdlEi6VWZ0PDGI+R3ETUxuzdH1s61fOEQn3mRjFMgUDtw90YmuTEy54/4L0cjuILVcbtR4qhXiv9JxZIrlbnqspl9c38c5UMD33+qhl4edp4s9L5uQBOmq1vfR6xqJcP+9pbYtoX5gQXHHkULk5KxDlCaJ3qDRA+oQZO8GLKU09H1c4og6uc9LkErpSYJUVTfFBms29+KOOQIXdoA34YU5OK/Hh/gQlYsk7e5RmqkjlZbv5pocmfi/YBNOoYeoIEx2InKNLz42+2rAzDsccd30/tJYRoIYuth+EuWy94bi2lEORtT8vsUtmkHLNEQRei4FYaxTrs1VPWj0BKrf9f3SCXIcgBV/a</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></Package>

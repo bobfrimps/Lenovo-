@@ -1,0 +1,330 @@
+                                                                   Revision : 17
+--------------------------------------------------------------------------------
+Software name      Lenovo USB3.0 LAN Driver for Docks and Adapters
+
+Support models     
+For X86    
+all thinkpad, all desktop, all lenovo notebook
+
+For ARM platform
+10w Gen 1(#82ST,82SU)
+X13s Gen 1(#21BX,21BY)
+
+=============================================================================
+=============================================================================
+A. Support Devices:
+============================================================
+Support device
+
+ThinkPad USB3.0 Ethernet Adapter
+Lenovo USB-C to Ethernet Adapter
+Lenovo USB-C Travel Hub
+ThinkPad Hybrid USB-C and USB-A Dock
+ThinkPad TBT3 Dock
+ThinkPad TBT3 Workstation Dock
+Lenovo Powered USB-C Travel Hub  
+Lenovo USB-C Mini Dock
+ThinkPad TBT3 Dock Gen2
+Lenovo Thunderbolt 3 Essential Dock
+ThinkPad USB-C Dock
+ThinkPad USB-C Dock Gen 2
+Lenovo USB-C Travel Hub Gen2  
+ThinkPad Universal USB-C Dock
+ThinkPad Universal Thunderbolt4 Dock
+Lenovo USB-C to 2.5G Ethernet Adapter
+
+
+B. Operating System: 
+============================================================
+				              
+Operating Systems: Microsoft Windows 11 (21H2 or later)
+	           Microsoft Windows 10 64-bit
+                   Microsoft Windows 7  64-bit
+
+Driver Version:    11.13.0420.2023 (Win11 LAN Driver for ARM)
+                   11.13.0420.2023 (Win11 LAN Driver for Intel and AMD)
+                   10.59.0420.2023 (Win 10 Intel and AMD) 
+                   7.62.0211.2022 (Win 7 Intel and AMD)
+		   Device Manager Driver installed version show: 1153.13.0420.2023 for Win11 x64 and arm(1G Ethernet)
+                   1156.13.0420.2023 for Win11 x64 and arm(2.5G Ethernet)
+	           10.59.0420.2023 (Win10 LAN Driver for Intel and AMD)
+                   7.62.0211.2022 (Win7 LAN Driver for Intel and AMD)
+	
+Refer to marketing materials to find out what computer models support which Operating Systems.
+
+C.
+============================================================
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package installs the software (USB3.0 LAN driver) to enable the
+  following device.
+
+  Device name                                  Device name in the Device Manager
+  -------------------------------              ---------------------------------
+  ThinkPad USB3.0 to Ethernet Adapter          ThinkPad USB3.0 Ethernet Adapter
+  Lenovo USB-C to Ethernet Adapter             Lenovo USB-C to Ethernet Adapter
+  Lenovo USB-C Travel Hub                      Lenovo USB-C Travel Hub
+  ThinkPad Hybrid USB-C and USB-A Dock         ThinkPad Hybrid USB-C and USB-A Dock
+  ThinkPad TBT 3 Dock                          ThinkPad TBT 3 Dock Ethernet
+  ThinkPad TBT3 Workstation Dock               ThinkPad TBT 3 Dock Ethernet
+  Lenovo Powered USB-C Travel Hub              Lenovo Powered USB-C Travel Hub
+  Lenovo USB-C mini Dock                       Lenovo mini Dock Ethernet
+  ThinkPad TBT3 Dock Gen2                      ThinkPad TBT 3 Dock Ethernet
+  Lenovo Thunderbolt 3 Essential Dock	       Lenovo Thunderbolt 3 Essential Dock
+  ThinkPad USB-C Dock              	       ThinkPad USB-C Dock Ethernet
+  ThinkPad USB-C Dock Gen 2		       ThinkPad USB-C Dock Gen 2
+  Lenovo USB-C Travel Hub Gen2                 Lenovo USB-C Travel Hub
+  ThinkPad Universal USB-C Dock                Realtek USB Gbe Family Controller
+  ThinkPad Universal Thunderbolt4 Dock         Realtek USB Gbe Family Controller
+  Lenovo USB-C to 2.5G Ethernet Adapter        Realtek USB 2.5GbE Family Controller
+
+  Refer to marketing materials to find out what computer models support which
+  devices.
+
+  If this package has been installed, updating (overwrite-installing) this
+  package will fix problems, add new functions, or expand functions as noted
+  below. 
+
+  This program is language independent and can be used with any language system.
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+Driver Version:    
+                                    11.13.0420.2023  	(Win11 LAN Driver for ARM)
+				    1153.13.0420.2023	(Display LAN Driver version for 1G under Win11 ARM)
+            			    1156.13.0420.2023	(Display LAN Driver version for 2.5G under Win11 ARM)
+                                    11.13.0420.2023 	(Win11 LAN Driver for Intel and AMD)
+				    1153.13.0420.2023	(Display LAN Driver version for 1G under Win11 Intel and AMD)
+            			    1156.13.0420.2023	(Display LAN Driver version for 2.5G under Win11 Intel and AMD)
+		   		    10.59.0420.2023 	(Win10 LAN Driver for Intel and AMD)
+                                    7.62.0211.2022 	(Win7 LAN Driver for Intel and AMD)
+
+[Important updates]
+ - Nothing.
+
+[New functions or enhancements]
+ - Nothing
+
+[Problem fixes]
+  1.  Removing additional error handling (hot reset).
+  2.  add INF HW option v3 support
+  3.  Fix BSOD 0x9f by different method approach.
+  4.  For NetAdapterCx driver, fix PG tool disable driver spend too much time issue
+  5.  For RTL8152B, update patch to align with linux tx hang issue.
+  6.  Fine tune for RTL8153E.
+  7.  For NetAdapterCx driver, fix driver option VLAN ID could not work issue
+  8.  Decrease Tx/Rx default Urb/Agg size to avoid ARM platform resource insufficient issue
+  9.  add bcd checker on forward unknown chip ID to forbid fake IC in advance
+  10. Remove 2.5GbE seires thermal detection feature dependency on "Idle Power Saving"
+  11. For RTL8153B-VC series, update hardware patch parameter to fix the pause frame flood issue during in S3
+  12. Fix new driver installed statistic IP will reset
+--------------------------------------------------------------------------------
+DETERMINING WHICH VERSION IS INSTALLED
+
+  1. Start Windows and logon with an administrator account.
+  2. If you use Windows 10, 11
+     Hold down the Win and X keys and choose "Device Manager"
+     If you use Windows 7
+     Select start, right click "computer", and choose "Device Manager"
+  3. Select Network Adapter, and unfold
+  4. Double click the Device.
+  5. choose "Driver page" and check driver version.
+
+--------------------------------------------------------------------------------
+NOTES
+
+  Nothing.
+
+--------------------------------------------------------------------------------
+INSTALLATION INSTRUCTIONS
+
+Note:
+- To determine if you should update the software, refer to the
+  Version Information section.
+
+Manual Install
+
+  This section assumes to use Internet Explorer and Windows Explorer.
+
+  Downloading file
+  1. Click once on the underlined file name. Once this is done, some pop-up
+     windows will appear.
+  2. Follow the instructions on the screen.
+  3. In the window to choose Run or Save, click Save.
+  4. Choose the folder you would like to download the file to and click Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating
+     that the download completed successfully.
+
+  Extracting file
+  5. Make sure to be logged on with an administrator account.
+  6. Locate the folder where the file was downloaded.
+  7. Locate the file that was downloaded and double-click it.
+  8. Follow the instructions on the screen.
+  9. In the Select Destination Location window, click Next. If you would like to
+     select a different folder, click Browse.
+ 10. In the Ready to Install window, click Install. All the necessary files will
+     be extracted to the folder selected in the step 9.
+
+  Installing files
+ 11. Make sure the checkbox next to "Install ..... now" is checked and click
+     Finish.
+ 12. Follow the instructions on the screen to complete installation and restart
+     the computer.
+
+  Finally delete the file saved in the step 4.
+
+
+Unattended Install
+
+  This is for system administrators' use only.
+ 
+  1. Refer to the Manual Install section, and download file.
+  2. [Path for file location] Filename.EXE /VERYSILENT
+
+--------------------------------------------------------------------------------
+
+UNINSTALLATION INSTRUCTIONS
+
+
+Manual Uninstall
+
+  1. Start Windows and logon with an administrator account.
+  2. If you use Windows 10, 11
+             Hold down the Windows logo key and press X to open a menu at the lower-left
+             area of the screen.
+     If you use Windows 7
+             Select start.
+  3. Select Control Panel from the menu.
+  4. Select Hardware and Sound, then select Device Manager in Devices and Printers.
+  5. Right click the device under Network Adapter.
+  6. Select Uninstall.
+  7. Check "Delete the driver software for this device." then select OK.
+  8. Restart.
+
+Silent uninstallation:
+	
+   1. [Path for file location] Filename.EXE /verysilent /uninstall
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions have been released to date.
+
+  Version           Build ID            Rev.     Issue Date
+  ----------        ----------------    ----     ----------
+  10.24.326.2018    u3etn01w    	01       2018/04/23
+  10.25.704.2018    u3etn02w    	02       2018/09/19
+  10.45.0308.2021   u3etn03w		05    	 2021/08/11 
+  10.46.0621.2021   u3etn04w    	06       2021/09/01
+  10.48.0914.2021   u3etn05w		07    	 2021/10/08
+  10.48.0914.2021   u3etn07w		11    	 2022/02/23
+  11.3.1102.2021    u3etn07w		11    	 2022/02/23
+  10.51.0318.2022   u3etn08w		12    	 2022/04/07
+  11.5.0318.2022    u3etn08w		12    	 2022/04/07
+  10.55.0823.2022   u3etn09w		15    	 2022/09/26
+  11.9.0823.2022    u3etn09w		15    	 2022/09/26
+  10.59.0420.2023   u3etn10w		17    	 2023/11/06
+  11.13.0420.2023   u3etn10w		17    	 2023/11/06
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of software, refer to the Determining which version is
+  installed section.
+
+
+Summary of Changes
+
+
+
+ Where: <   >        Version number
+        (   )        Build ID for administrative purpose
+        [Important]  Important update
+        (New)        New function or enhancement
+        (Fix)        Correction to existing function
+
+
+<10.59.0420.2023>(u3etn10w) version: 17
+- (Fix) Fix some bugs.
+- (Fix) Removing additional error handling (hot reset)
+- (Fix) For RTL8153B-VC series, update hardware patch parameter to fix the pause frame flood issue during in S3
+- (Fix) New driver install statistic IP will reset
+- (New) Add support for 2.5G Ethernet.
+
+<10.55.0823.2022>(u3etn09w) version: 15
+- (New) add the descition about silent install.
+
+<10.55.0823.2022>(u3etn09w) version: 14
+- (Fix) Fix some bugs.
+
+<10.51.0318.2022>(u3etn08w) version: 13
+(Fix)Update [Problem Fix] description to remove unused IC PNs.
+
+<10.51.0318.2022>(u3etn08w) version: 12
+- (Fix) Fix some bugs.
+(New) 
+add support models
+For X86    
+all thinkpad, all desktop, all lenovo notebook
+
+For ARM platform
+10w Gen 1(#82ST,82SU)
+X13s Gen 1(#21BX,21BY)
+
+<10.48.914.2021>(u3etn07w) version: 11
+- (New)
+Add support model
+all thinkpad, all desktop, all lenovo notebook
+In Device manager, the driver version is 1153.3.1102.2021 for RTL8153 chipest;
+
+<10.48.914.2021>(u3etn07w)
+ - (Fix) Fix some bugs.
+
+<10.48.914.2021>(u3etn05w)
+ - (Fix) Fix some bugs.
+
+<10.46.0621.2021>(u3etn04w)
+ - (Fix) Fix some bugs.
+
+<10.45.0308.2021>(u3etn03w)
+ - (Fix) Fix some bugs.
+
+<10.25.704.2018> (u3etn02w)
+ - (New) Added support for 
+T590(#20N4,20N5)
+T14s Gen 1(#20T0,20T1)
+T15 Gen 1(#20S6,20S7)
+T14s Gen2(#20WM,20WN)
+T15 Gen 2(#20W4,20W5)
+X390 Yoga(#20NN,20NQ)
+X13 Yoga Gen2(#20W8,20W9)
+X12 Detachable Gen 1(#20UW,20UV)
+L13 Yoga Gen2(#20VK,20VL)
+L13 Clam Gen2(#20VH,20VJ)
+P53(#20QN,20QQ)
+P73(#20QR,20QS)
+P1 Gen 3(#20TH,20TJ)
+
+<10.25.704.2018> (u3etn02w)
+ - (Fix) Fix some bugs.
+
+<10.24.326.2018> (u3toethernet01ww)
+ - (New) Initial release for System Update.
+
+--------------------------------------------------------------------------------
+LIMITATIONS
+
+ Once uninstall this USB3.0 LAN driver, you cannot detect same version of 
+ LAN driver by TVSU and you need to manual install the driver.
+
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo and ThinkPad are registered trademarks of Lenovo.
+* Microsoft and Windows are registered trademarks of Microsoft Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.

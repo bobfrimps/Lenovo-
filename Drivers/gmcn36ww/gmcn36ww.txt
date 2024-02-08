@@ -1,0 +1,140 @@
+Flash BIOS update - Flash from Operating System version for Lenovo ThinkBook 13s Gen 3/ Lenovo ThinkBook 14s Gen 3/ Lenovo ThinkBook K3/ Lenovo ThinkBook K4 
+Version GMCN36WW
+
+Applicable OS Win10(64-bit), Win11(64-bit)
+
+Installation README
+Updated Date:2023/09/01
+This package updates the basic input/output system (BIOS) on Lenovo ThinkBook 13s Gen 3/ Lenovo ThinkBook 14s Gen 3/ Lenovo ThinkBook K3/ Lenovo ThinkBook K4
+
+BIOS, abbreviation of Basic Input/Output System, is integrated in ROM chip on main board, which contains the basic input/output program, system configuration information, system startup self-check and pre-setup programs. BIOS provides most basic low-level hardware operations; it is the connection between software and hardware, and interfacing window of hardware and operating system.
+
+Note: Make note of any settings you have changed in the BIOS Configuration Utility. These settings may have to be re-entered after updating the BIOS.
+
+Attention: Do not power off or restart your computer during the BIOS flashing process, which will cause serious damage and improper functioning of your computer.
+
+Print this file so that you can refer to it during the installation.
+
+Downloading the package
+=======================
+1. Click the file link to download the file from the web page.
+2. When prompted, select a drive and directory in which to save the downloaded file.
+
+Installing the package in Windows.
+======================
+Please follow following step to update BIOS in Windows:
+1.  Locate the file GMCN36WW.exe that has been downloaded.
+2.  Double click the GMCN36WW.exe icon.
+3.  Follow wizard UI by making sure what BIOS to flash and flash on what platform
+5.  Finally press Install & Finish to start flashing. During the process, you are advised not to turn off the computer.
+6.  When the update finishes, the computer will automatically reboot for the changes to take effect.
+
+Updated Information:
+
+Latest Version BIOS fixed all merged issues from previous.
+
+Summary of changes
+==================
+General Information:
+GMCN36WW
+1. 2023 IPU4 security issue BIOS update:
+   - LEN-136193: AMD-SN-4007 DXE Driver Memory Leaks
+   - LEN-135396: AMD-SN-4002 - Client Vulnerabilities – NOV 2023
+2. 2024 IPU3 security issue BIOS update:
+   - LEN-123534 [EDK2] PiSmmCore: SmmEntryPoint underflow
+   - LEN-123536: EDK2 Empty TPM Platform Auth
+   - LEN-123535: [EDK2] IScsiDxe: remotely exploitable buffer overflows
+GMCN35WW
+1. 2023 IPU3 security issue BIOS update:
+   - Update solution for HDD password auto-unlock when BIOS update (Enhancement to address security vulnerability LEN-119524)
+   - LEN-120128 AMD-SN-4003 SMM Memory Corruption Vulnerability (Enhancement to address security vulnerability CVE-2023-20555)
+   - LEN-127392 DBX Update Required March 2023 (Enhancement to address security vulnerability LEN-127392)
+   - LEN-118373 IOActive/Phoenix: Security ID 005-013 (Enhancement to address security vulnerability LEN-118373)
+   - LEN-115697 EDK2 Reference Code Vulnerabilities (Enhancement to address security vulnerability CVE-2022-36763, CVE-2022-36764, CVE-2022-36765)
+   - LEN-115710 OpenSSL Vulnerabilities ( Enhancement to address security vulnerability CVE-2023-0286, CVE-2022-4304, CVE-2022-4203, CVE-2023-0215, CVE-2023-0216, CVE-2023-0217, CVE-2023-0401)
+
+GMCN34WW
+1. Per Lenovo's request, update touchpad _HID to replace ACPI/MSFT000X
+   -Syna: SYNA2BA6
+   -ELAN: ELAN06FA
+   
+GMCN33WW
+1.  Rollback FTPM FW to prevent Bitlocker recovery.
+2.  Enhancement to address security vulnerability LEN-96371.
+    Enhancement to address security vulnerability LEN-96378.
+3.  Improvement type 11
+4.  Remove unused INT15 function
+
+GMCN32WW
+1.  Remove dust mode support 
+2.  Fix changing ITS mode fail in setup menu
+
+GMCN31WW
+1.  2022 IPU3 security issue BIOS update:
+    LEN-93889 AMD-SN-1031: AMD Client Vulnerabilities
+	-Enhancement to address security vulnerability CVE-2021-26316.
+    -Enhancement to address security vulnerability CVE-2021-26346.
+2.  Update PI-1.0.0.C for Win11 SV2 TPMB support. (From SCT 4.3.1.156)
+3.  Fix incorrect SSID after S3 resume in GSKU
+4.  LV550AC GSKU W/A: Add delay in FchSmmSxDispatchHandler and SmuNotifyS3Entry for S3 long run issue
+
+GMCN30WW
+1.  Set SMBIOS Type 2 chassis handle
+2.  Remove GSKU model IDs method
+3.  Implement GSKU support for LV550AC: Add INT15 961047 to set/clear GSKU flag
+
+GMCN29WW
+1.  Enhancement to address security vulnerability CVE-2020-12930, CVE-2020-12931, CVE-2020-12944, CVE-2020-12946, CVE-2020-12951, CVE-2021-26312, CVE-2021-26335, CVE-2021-26336, CVE-2021-26337, CVE-2021-26339, CVE-2021-26351, CVE-2021-26352, CVE-2021-26372, CVE-2021-26373, CVE-2021-26375, CVE-2021-26376, CVE-2021-26378, CVE-2021-26388, CVE-2021-26390.
+2.  Enhancement to address security vulnerability LEN-86144.
+
+GMCN28WW
+1.  Enhancement to address security vulnerability LEN-66615
+
+GMCN27WW
+1. Fix TPM lock function check fail by Lenovo's tool "bugtool.exe"
+2. Update Chinese string in setup menu
+
+GMCN26WW
+1. Revert ITS5.0 support
+2. Add Chinese language item on setup menu
+
+GMCN25WW
+1. Fix Lenovo WMI issue
+2. Hide Keyboard backlight item in Lenovo Vantage when it's not supported
+3. Windows October 2021 HLK issue: Hardware Security Testability Interface Test failed
+4. Correct CNVS structure match the offset between *.h and *.asi.
+5. Fix ITS5.0 mode priority
+6. Fix Windows October 2021 HLK TPM 2.0 UEFI Preboot Interface Test failed
+7. System pop up error message after enter invalid HDD password 3 times, should be 2 times
+8. Follow load default rule 2 after SS: Implement keep "SecureBoot" option with flash command /cvar
+9. Update formal KBC GMEC19WW for LV550AC
+    1)Update thermal table 0601 by thermal team update
+
+GMCN24WW
+1. Implement ITS 5.0 for LV550AC
+2. Support SPI ROM GD25LR128D for LV550AC
+3. Update brightness setting for SMB projects
+4. System BSOD when S0i3 resume after HDD password set
+5. Fix compiling error when CrisisToClearPwd.def included after codebase 4.3.1.87 update
+6. Update formal KBC GMEC18WW for LV550AC
+    1)Change KB sniper behavior - Origin: Q Event, Current: scan code
+
+GMCN23WW
+1. Initial release on SPMS
+
+Trademarks
+==========
+IdeaPad and IdeaCentre are registered trademarks of Lenovo.
+
+Microsoft and Windows are trademarks of Microsoft Corporation in 
+the United States, other countries, or both. Other company, product, 
+and service names may be trademarks or service marks of others.
+
+THIS DOCUMENT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  
+WE DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, 
+INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF FITNESS 
+FOR A PARTICULAR PURPOSE AND MERCHANTABILITY WITH RESPECT TO THE 
+INFORMATION IN THIS DOCUMENT.  BY FURNISHING THIS DOCUMENT, WEGRANT 
+NO LICENSES TO ANY PATENTS OR COPYRIGHTS.
+
+Copyright (c) Lenovo 2016, all rights reserved

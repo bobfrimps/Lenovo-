@@ -1,0 +1,296 @@
+                                                                   Revision : 1
+--------------------------------------------------------------------------------
+Generic DisplayLink Driver for USB Docks and Adapters - Readme Instruction
+
+
+Support models
+==============
+For X86
+all thinkpad, all desktop, all lenovo notebook
+
+For ARM platform, NOT support ARM platform
+10w Gen 1(#82ST,82SU)
+X13s Gen 1(#21BX,21BY)
+
+Note: Suppoprt devices only support specific models/systems. For detail, please refer to the product's OCM for the latest support system list.
+
+Driver Version
+==============
+Software Package Version(DisplayLink Core Software): 11.2.3146.0(DisplayLink 11.2 M0)
+
+The software package includes the below drivers:
+DisplayLink Graphics Driver Version: 11.2.3146.0    Microsoft Windows 10 64-bit (1607 or later)
+                                     11.2.3146.0    Microsoft Windows 11 (21H2 or later)
+DisplayLink Audio Driver Version:    11.2.3084.0
+
+Note: 
+1. Drivers version can be found in Device Manager. 
+2. Software package version can be found in control panel/Programs by standard setup.exe installation, there are no item show by inf installation.
+3. During .exe running,your computer screen may flash several time or be black several seconds to install the driver, please wait until the installation finish. 
+
+Operating System 
+=================
+Microsoft Windows 10 64-bit (1607 or later)			
+Microsoft Windows 11 (21H2 or later)
+
+Note: Refer to marketing materials to find out what computer models support which Operating Systems.
+
+Support Devices
+================
+ThinkPad Hybrid USB-C with USB-A Dock(40AF)
+Lenovo USB 3 to DP Adapter(4X90J31021)
+Lenovo USB 3.0 to DVI/VGA Monitor Adapter(0B47072)
+Lenovo Universal USB 3.0 to VGA/HDMI Adapter(4X90H20061)
+
+Note:
+1: Please make sure your computer has all necessary drivers (video, chipset, USB 3.0 driver) installed before installing this new driver package.
+2: Please run Windows Update to install all the OS fixes and service packages before installing this new driver packages.
+
+CONTENTS
+=================
+     1. Installation Guide
+     2. Uninstallation
+     3. Version History
+
+1. Installation Guide
+---------------------
+  - Normal installation:
+    Run the exe file directly you download to install the driver.
+    
+  - Silent installation command line:
+    [Flie Located folder]>dislink1123146.exe /VERYSILENT /NORESTART
+  
+  Note: The system may need to be restarted for the driver to take effect.
+
+2. Uninstallation
+-----------------
+  Uninstall the driver - Control Panel
+  a. Enter 'Control Panel' -> Click 'Uninstall a program'
+  b. Select 'DisplayLink Graphics'
+  c. Click 'Uninstall'
+  
+  Uninstall Windows Inbox driver - Device Manager
+  a. Enter 'Device Manager' -> 'Display adapters' -> Right Click on the device as above "Support Devices" listed.
+  b. Select 'Uninstall device'  
+  
+3. Version History
+------------------
+
+  The following versions have been released to date.
+
+  Version       Issue Date        Build ID
+  ----------    ----------     --------------
+  11.2.3146.0   2023/09/26     dislink1123146
+  11.1.2757.0   2023/06/28     dislink1112757
+  11.1.2657.0   2023/04/26     dislink1112657
+  10.2.7042.0   2022/09/21     dislink1027042
+  10.1.2875.0   2021/08/11     dislink1012875
+  10.0.0237.0   2020/12/08
+   9.1.1651.0   2019/09/05
+   8.6.1317.0   2018/10/26
+   8.5.3490.0   2018/06/06
+   8.4.3345.0   2018/03/12
+   8.3.2099.0   2017/12/05
+   8.2.1646.0   2017/04/14
+   8.0.0923.0   2016/10/31
+   8.0.0483.0   2016/08/28
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of software, refer to the Determining which version is
+  installed section.
+
+Summary of Changes
+---------------------
+  Where: <   >        Package version number
+         (   )        Build ID for administrative purpose
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+ Version History                  Build ID         Rev.     Released Date
+ ----------------------        --------------      ----     -------------
+ <Driver V11.2.3146.0>        (dislink1123146)       1       2023/09/26
+              DisplayLink software release 11.2 delivers:
+              - (New) General stability updates and bug fixes.
+              - (Fix) Issues fixed since 11.1 M1 release.
+  
+ <Driver V11.1.2757.0>        (dislink1112757)       1       2023/06/28
+              DisplayLink software release 11.1 delivers:
+              - (New) General stability updates and bug fixes.
+              - (Fix) Issues fixed since 11.1 M0 release.
+  
+ <Driver V11.1.2657.0>        (dislink1112657)       1       2023/04/26
+              DisplayLink software release 11.1 delivers:
+              - (New) General stability updates and bug fixes.
+              - (Fix) Issues fixed since 11.0 M0 release.
+ 
+ <Driver V10.2.7042.0>        (dislink1027042)       1       2022/09/21
+              DisplayLink software release 10.2 delivers:
+              - (New) Windows 10/11 22H2 supported.
+              - (Fix) General stability updates and bug fixes.
+              - (Impormant) Remove ThinkPad USB 3.0 Ultra Dock(40A8)/ThinkPad USB 3.0 Pro Dock(40A7)/ThinkPad USB 3.0 Basic Dock(Previous name: ThinkPad Basic USB 3.0 Dock)(4X10) in support list, you can update 				    driver by website(https://support.lenovo.com/us/en/solutions/acc100183)
+
+
+ <Driver V10.1.2875.0>        (dislink1012875)       3       2021/08/11
+              DisplayLink software release 10.1 delivers:
+			  Updated release for Windows 11
+              - DisplayLink Graphics update for DL-6000 series: improves 4K video playback and video conferencing performance when your system resources are taxed.
+              - Hot-desk / hoteling package: added optional wired MAC address passthrough (https://support.displaylink.com/knowledgebase/articles/613455#wiredmacclone)
+              - (Fix) General stability updates and bug fixes.
+
+ <Driver V10.1.2875.0>        (dislink1012875)       2       2021/04/15
+              - (New) add support models
+              all thinkpad, all desktop, all lenovo notebook.
+		
+ <Driver V10.1.2875.0>        (dislink1012875)       1       2021/01/10
+              - (New) add support models	
+              K14 AMD Gen1(#21CU,21CV)
+              X1 Fold G1(#20RK,20RL)
+              X1 Extreme Gen4(#20Y5,20Y6)
+              Yoga Slim 7 Carbon 14ACN6(#82L0)
+              IdeaPad Slim 7 Carbon 14ACN6(#82L1)
+              L13 Yoga AMD Gen2(#21AD,21AE)
+              L13 Clam AMD Gen2(#21AB,21AC)
+              T15p Gen2(#21A7,21A8)
+              P15v Gen2(#21A9,21AA)
+              P1 Gen4(#20Y3,20Y4)
+              ThinkBook 13x ITG(#20WJ)
+              ThinkBook 13s G3 ACN(#20YA)
+              YG Duet 7 13ITL6 L(#82Q7)
+              IP 3 14ADA6(#82KQ)
+              IP 3 15ADA6(#82KR)
+              IP 3 17ADA6(#82KS)
+              X13 AMD Gen 2(#20XH,20XJ)
+              ThinkBook Plus G2 ITG(#20WH)
+              ThinkBook 16p G2 ACH(#20YM)
+              Gaming 3 15IHU6(#82K1,82MG)
+              ThinkBook 14 G3 ACL(#21A2)
+              P14s AMD Gen 2(#21A0,21A1)
+              T14s AMD Gen2(#20XF,20XG)
+              X13 Yoga Gen2(#20W8,20W9)
+              X13 Gen 2(#20WK,20WL)
+              X1 Yoga Gen 6(#20XY,20Y0)
+              X1 Carbon Gen 9(#20XW,20XX)
+              X12 Detachable Gen 1(#20UW,20UV)
+              X1 Titanium Yoga Gen 1(#20QA,20QB)
+              X1 Nano Gen 1(#20UN,20UQ)
+              X1 Yoga 2nd Gen(#20JF,20JG,20JE,20JD)
+              A285(#20MW,20MX)
+              A485(#20MU,20MV)
+              L15 AMD Gen2(#20X7,20X8)
+              L14 AMD Gen2(#20X5,20X6)
+              L15 Gen2(#20X3,20X4)
+              L14 Gen2(#20X1,20X2)
+              T14 AMD Gen2(#20XK,20XL)
+              T14s Gen2(#20WM,20WN)
+              T14 Gen 2(HC)(#20W2,20W3)
+              T14 Gen 2(#20W0,20W1)
+              T15 Gen 2(#20W4,20W5)
+              T15g Gen 1(#20UR,20US)
+              P14s Gen 2(#20VX,20VY)
+              P15s Gen 2(#20W6,20W7)
+              P15 Gen 1(#20ST,20SU)
+              P17 Gen 1(#20SN,20SQ)
+              E15(#20RD,20RE)
+              ThinkBook 15 G3 ACL(#21A4)
+              ThinkBook 14s Yoga ITL(#20WE)
+              ThinkBook 13s G2 ARE(#20WC)
+              ThinkBook 14 G2 ITL(#20VD)
+              ThinkBook 15 G2 ITL(#20VE)
+              ThinkBook 14 G2 ARE(#20VF)
+              ThinkBook 15 G2 ARE(#20VG)
+              ThinkBook 13s G2 ITL(#20V9)
+              ThinkBook 14s G2 ITL(#20VA)
+              ThinkBook 15p IMH(#20V3)
+              ThinkPad E15 Gen 2 (20TD,20TE)
+              ThinkPad E14 Gen 2 (20TA,20TB)
+              ThinkPad R14 Gen 2(20TC)
+              ThinkPad P14s Gen 1(20Y1,20Y2)
+              ThinkPad P15v Gen 1(20TQ, 20TR)
+              ThinkPad T15p Gen 1(20TN, 20TM)
+              ThinkPad X13 Gen1(20UF,20UG)
+              ThinkPad T14 Gen1(20UD,20UE)
+              ThinkPad T14s Gen1(20UH,20UJ)
+              ThinkPad E15 Gen 2(20T8,20T9)
+              ThinkPad E14 Gen 2(20T6,20T7)
+              ThinkPad L14 Gen 1(20U5, 20U6)
+              ThinkPad L15 Gen 1(20U7,20U8)
+              ThinkPad P73(20QR,20QS)
+              ThinkPad P53(20QN,20QQ)
+              ThinkPad L15 Gen 1(20U3,20U4)
+              ThinkPad L14 Gen 1(20U1,20U2)
+              ThinkPad T14s Gen 1(20T0,20T1)
+              ThinkPad P15s Gen 1(20T4,20T5)
+              ThinkPad T15 Gen 1(20S6,20S7)
+              ThinkPad P14s Gen 1(20S4,20S5)
+              ThinkPad T14 Gen 1(20S0,20S1,20S2,20S3)
+              ThinkPad X13 Gen 1(20T2,20T3)
+              ThinkPad X13 Yoga Gen 1(20SX,20SY)
+              ThinkPad X1 Yoga 5th Gen(20UB,20UC)
+              ThinkPad X1 Carbon 8th Gen(20U9,20UA)
+              Thinkbook plus(20TG) 
+              ThinkBook 14-IIL(20SL)
+              ThinkBook 15-IIL(20SM)
+              ThinkBook 14-IML(20RV)
+              ThinkBook 15-IML(20RW)
+              ThinkBook 13s-IML(20RR)
+              ThinkBook 14s-IML(20RS)
+              ThinkBook 14s-IWL(20RM)
+              ThinkBook 13s-IWL(20R9)
+              ThinkPad11e Yoga Gen 6(20SE,20SF)
+              ThinkPad L13(20R5,20R6)
+              ThinkPad L13 Yoga(20R3,20R4)
+              ThinkPad S2 Yoga 5th (20R8)
+              ThinkPad S2 5th Gen(20R7)
+              ThinkPad E14(20RA,20RB)
+              ThinkPad R14(20RC)
+              ThinkPad S3 Gen2(20RG)
+              ThinkPad S1 4th Generation)(PRC)(20LL)
+              ThinkPad X260(20F5,20F6)
+              ThinkPad X250(20CM,20CL)
+              L13 Clam G2(#20VH,20VJ)
+              L13 Yoga G2(#20VK,20VL)
+
+  10.0.237.0  2020/12/8
+              Improved performance and flexibility enabled by DisplayLink new dynamic compute switching algorithms, which enable flexible dynamic load balancing between CPU and GPU for an improved user experience.
+              Dual 5K Ultrawide (5120x1440 @ 60 Hz) displays now supported on DisplayLink DL-6950 products.
+              Windows 10 IoT Enterprise is now part of supported Windows 10 SKUs.
+              Other performance and reliability improvements.
+
+  9.1.1651.0  2019/09/05
+              Updated release for Windows 10 19H1 support.(build 18362)
+
+  8.6.1317.0  2018/10/26
+              Updated release for Windows 10 Redstone support.(build 17763)
+
+  8.5.3490.0  2018/6/6
+              Updated release Windows 10 Redstone support.(build 17134)
+
+  8.4.3345.0  2018/3/12
+              Regular updated release to support new product and issue fixed.
+
+  8.3.2099.0  2017/12/5
+              Updated release for Windows 10 Redstone support.(build 16299)
+
+  8.2.1646.0  2017/4/14
+              Updated release for Windows 10 Redstone support.(build 15063)
+
+  8.0.923.0   2016/10/31
+              Updated release for issue fixed.
+
+  8.0.483.0   2016/8/28
+              First release for Windows 10 Redstone support.(build 14393)
+
+
+TRADEMARKS
+
+* Lenovo and ThinkPad are registered trademarks of Lenovo.
+
+* DisplayLink is a registered trademark of DisplayLink.
+
+* Microsoft, Windows are registered trademarks of Microsoft Corporation.
+
+Other company, product, and service names may be registered trademarks or service marks of others.

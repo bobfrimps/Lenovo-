@@ -1,0 +1,254 @@
+                                                                   Revision : 01
+--------------------------------------------------------------------------------
+Package Name       ThinkPad Universal USB-C Smart Dock FW Package
+
+Support models  
+X1 Nano G3(#21K1,21K2)
+X1 Carbon G11(#21HM,21HN)
+X1 Yoga G8(#21HQ,21HR)
+X1 Fold 16 G1(#21ES,21ET)
+X13 Gen 3 AMD(#21CM,21CN)
+X13 Yoga Gen 3(#21AW,21AX)
+X13 Gen 3(#21BN,21BQ)
+X1 Yoga Gen 7(#21CD,21CE)
+X1 Carbon Gen 10(#21CB,21CC)
+X13 AMD Gen 2(#20XH,20XJ)	
+X13 Yoga Gen2(#20W8,20W9)
+X13 Gen 2(#20WK,20WL)
+X1 Yoga Gen 6(#20XY,20Y0)
+X1 Carbon Gen 9(#20XW,20XX)
+X12 Detachable Gen 1(#20UW,20UV)
+
+L14 AMD Gen4(#12H5,21H6)
+L15 AMD Gen4(#21H7,21H8)	
+L13 Clam AMD G4(#21FN,21FQ)
+L13 Yoga AMD G4(#21FR,21FS)
+L13 Yoga G3(#21B5,21B6)
+L13 Clam G3(#21B3,21B4)
+L15 Gen 3((#21C3,21C4)
+L14 Gen 3(#21C1,21C2)
+L15 AMD Gen 3(#21C7,21C8)
+L13 Clam AMD G3(#21B9,21BA)
+L15 AMD Gen2(#20X7,20X8)
+L14 AMD Gen2(#20X5,20X6)
+L15 Gen2(#20X3,20X4)
+L14 Gen2(#20X1,20X2)
+
+T14s Gen 3 AMD(#21CQ,21CR)
+T14 Gen 3 AMD(#21CF,21CG)
+T16 Gen 1 AMD(#21CH,21CJ)
+T14s Gen 3(#21BR,21BS)
+T14 Gen 3(#21AH,21AJ)
+T14 AMD Gen2(#20XK,20XL)	
+T14s AMD Gen2(#20XF,20XG)
+T14s Gen2(#20WM,20WN)
+T14 Gen 2(#20W0,20W1)
+T15 Gen 2(#20W4,20W5)
+
+P14s AMD G3(#21J5,21J6)
+P16(#21D6,21D7)
+P16s Gen 1 AMD(#21CK,21CL)
+P14s AMD Gen 2(#21A0,21A1)
+P14s Gen 2(#20VX,20VY)
+P15s Gen 2(#20W6,20W7)
+
+100w G4(#82VK,82VL)
+500w G4(#82VQ,82VR)
+300w Gen4(#82VM,82VN)
+13w Yoga G2(#82YR,82YS)
+100e Gen4(#82W0,82W1)
+300e Gen4(#82W2,82W3)
+
+E15 Gen 4(#21E6,21E7)
+E14 Gen 4(#21E3,21E4)
+E15 AMD Gen3(#20YG,20YH,20YJ,20YK)
+E14 AMD Gen3(#20Y7,20YD,20YE,20YF)
+E15 Gen 2(#20TD,20TE)
+E14 Gen 2(#20TA,20TB)
+E15 Gen2 AMD(#20T8,20T9)
+E14 Gen2 AMD(#20T6,20T7)
+
+ThinkBook Plus Gen 3 IAP(#21EL)
+ThinkBook 13x Gen2 IAP(#21AT)
+ThinkBook 16p NX IAP(#21EU)
+ThinkBook 16p NX ARH(#21EV)
+ThinkBook 13s Gen 4 ARB(#21AS)
+ThinkBook 14s Yoga Gen 2 IAP(#21DM)
+ThinkBook 14 Gen 4+ ARA(#21D0)
+ThinkBook 16 Gen 4+ ARA(#21D1)
+ThinkBook 14p Gen 3 ARH(#21EJ)
+ThinkBook 14 Gen 4 IAP(#21DH)
+ThinkBook 15 Gen 4 IAP(#21DJ)
+ThinkBook 14 Gen 4 ABA(#21DK)
+ThinkBook 15 Gen 4 ABA(#21DL)
+ThinkBook 14 Gen 4+ IAP(#21CX)
+ThinkBook 16 Gen 4+ IAP(#21CY)
+ThinkBook 13s G4 IAP(#21AR)
+ThinkBook 15p Gen 2 ITH(#21B1)
+ThinkBook 15 G3 ACL(#21A4)
+ThinkBook 14 G3 ACL(#21A2)
+ThinkBook 14 G2 ITL(#20VD)	
+ThinkBook 15 G2 ITL(#20VE)
+
+
+
+ThinkPad Universal USB-C Smart Dock (40B2)
+                  
+
+Operating Systems  Microsoft Windows 10 64-bit (1903 or later), Windows 11 (21H2 or later).
+
+
+Firmware Version   3.1.56
+
+Format             Executable file
+
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+This utility will install the PD/DMC/USB/DP/Audio firmware.
+
+This package is compiled into an executable file which runs on Windows 10.0
+
+
+--------------------------------------------------------------------------------
+IMPORTANT INFORMATION
+
+IMPORTANT: DO NOT terminate update process with power off, undock or plug out an
+           external display monitor.  Or your docking station may need to be replaced.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+**********************************Release Note Of V3.1.56 *************************************************************
+DMC[1.3.063] 2023/5/9
+1.Fixed the LAN function lost issue when FW update from old version
+
+--------------------------------------------------------------------------------
+LIMITATION
+
+-N/A
+
+
+--------------------------------------------------------------------------------
+INSTALLATION INSTRUCTIONS
+
+Manual Install
+
+  This section assumes to use Internet Explorer and Windows Explorer.
+
+  Download Docking FW Package
+  1. Select the underlined file name. Once this is done, some pop-up windows
+     will appear.
+  2. Follow the instructions on the screen.
+  3. In the window to choose Run or Save, select Save.
+  4. Choose the folder you would like to download the file to, and select Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating
+     that the download completed successfully.
+  5. Make sure to be logged on with an administrator account.
+  6. Make sure your ThinkPad Universal USB-C Smart Dock connect to system.
+
+
+-- Silent Installation by command :
+     1. Connect dock to PC/NB;
+     2. [File Located folder]\usbcsmdkfw*.exe.exe /verysilent /u
+     3. Return code / Result list
+           0: Updating version successfully.
+           1: Did not start updating process due to firmware version is newer or equal.
+          -1: Updating version failed due to dock not found or other unknown reason.
+
+-- Auto create log file into directory
+
+-- FW version check by command :
+     1. Connect dock to PC/NB;
+     2. [File Located folder]\usbcsmdkfw*.exe.exe /verysilent /v
+     3. FW version information will be auto created into the log file: folder path.
+     4. Return code / Result list
+            0: Checking version successfully, firmware update is not needed (dock's firmware is equal to or newer than package's).
+            1: Checking version successfully, firmware update is needed (dock's firmware is older than package's).
+           -1: Checking version failed due to dock not found or other unknown reason.
+
+-- Force update FW even dock FW is newer than the fw tool content or equal.
+           usbcsmdkfw*.exe.exe /u /f /verysilent
+
+  How to Update FW
+===========================================================
+    1. Attach dock to a system.
+    2. Double click usbcsmdkfw*.exe.
+    3. Click "Update" button.
+
+  How to Read FW Version
+===========================================================
+    1. Attach dock to a system.
+    2. Double click usbcsmdkfw*.exe.
+    3. Click "Check" button.
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+Release    		Firmware   	Rev   Issue Date
+--------   		--------- 	---   ----------
+usbcsmdkfw3156   	3.1.56     	01    2023-05-26
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+
+<usbcsmdkfw3156> 3.1.56
+    Audio codec FW ver:49-0E-43
+    DMC version: 1.3.065
+    PD CCG4 version: 5.4.116
+    DP HUB FW Ver:5.07.001
+    HUB 1 (Q7)/HUB 2 (Q8) FW Ver: 5C52/5C42
+
+
+Version History
+
+Package          DP HUB          VIA HUB(Q7,Q8)    PD (CCG4)     DMC          Audio codec   Date
+---------        ---------       ---------         ---------     ---------    ---------     ---------
+V3.1.56          5.07.001        5C52/5C42         5.4.116       1.3.065      49-0E-43      2023/05/26
+V3.1.52          5.07.001        5C52/5C42         5.4.116       1.3.055      49-0E-43      2023/02/08
+V3.1.42          5.06.004    	 5C22              5.4.108       1.3.053      49-0E-42      2022/06/13
+V3.1.18          5.06.001    	 5C02              5.4.104       1.3.038      49-0E-41      2022/01/27
+
+Change History
+
+**********************************Release Note Of V3.1.52 *************************************************************
+DMC[1.3.055] 2022/9/22
+1.Set the other components are also updated. 
+
+[V5.4.116] 2023/01/31
+1. Billboard did not enumerate when plug in to the platform that is only support Lenovo alt-mode issue fix
+ 
+VIA[5C52/5C42] 2022/10/25
+1.Fix HUB2 & Lan lost on P16 Gen1.
+
+DP[5.07.001] 2022/12/02
+1. Fixed the monitor EDID corrupted issue causing no audio option on that monitor
+2. Fixed the HDCP1.4 authentication issue in MST cascade mode
+3. Disable the HDCP for HDMI to VGA dongle
+4. Fixed the HDR issue with DP2VGA dongle
+
+Audio [49-0E-43] 2022/8/17
+1.For fix noise issue.
+
+**********************************Release Note Of V3.1.42 *************************************************************
+DMC[1.3.053] 2022/06/09
+1.DMC firmware with the OTA success/fail case is added after phase2 update is completed.
+
+**********************************Release Note Of V3.1.18 *************************************************************
+1.Initial release . 
+
+--------------------------------------------------------------------------------
+
+TRADEMARKS
+
+* Lenovo and ThinkPad are registered trademarks of Lenovo.
+
+* Microsoft, Windows and Windows Vista are registered trademarks of Microsoft
+  Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.

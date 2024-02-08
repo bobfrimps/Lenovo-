@@ -1,0 +1,713 @@
+                                                                   Revision : 03
+--------------------------------------------------------------------------------
+Package Name       ThinkPad USB-C Dock Gen2 FW Package
+
+--------------------------------------------------------------------------------
+Operating Systems  Microsoft Windows 10 64-bit(1809 or later)
+		   Microsoft Windows 11 64-bit (21H2 or later)
+
+
+Firmware Version   1.1.20
+
+Format             Executable file
+
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+This utility will install the Cypress PD/USB/DP/Audio firmware.
+
+This package is compiled into an executable file which runs on Windows 10/Windows 11
+
+
+--------------------------------------------------------------------------------
+IMPORTANT INFORMATION
+
+IMPORTANT: DO NOT terminate update process with power off, undock or plug out an
+           external display monitor.  Or your docking station may need to be replaced.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+   Firmware Version   1.1.20
+
+-  DP HUB FW Ver:5.07.001
+   	
+--------------------------------------------------------------------------------
+LIMITATION
+
+-N/A
+
+
+--------------------------------------------------------------------------------
+INSTALLATION INSTRUCTIONS
+
+Manual Install
+
+  This section assumes to use Microsoft Edge and Windows Explorer.
+
+  Download Docking FW Package
+  1. Select the underlined file name. Once this is done, some pop-up windows
+     will appear.
+  2. Follow the instructions on the screen.
+  3. In the window to choose Run or Save, select Save.
+  4. Choose the folder you would like to download the file to, and select Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating
+     that the download completed successfully.
+  5. Make sure to be logged on with an administrator account.
+  6. Make sure your ThinkPad USB-C Gen2 Dock connect to system.
+
+  Upgrade Docking FW
+  7. Close all applications.
+  8. Double click the downloaded executable file.
+  9. It will show both installed and going to be installed firmware versions.
+ 10. Click next button, if your docking station has older than 1.1.20.
+ 11. Follow the instructions on the screen to complete installation 
+ 12, If your docking station already updated, click Cancel update button to exit.
+
+  Finally delete the file saved in the step 4.
+
+Silent Install
+--Silent command list
+     /? : Display this help message
+     /v : Show FW version on screen
+     /u : Update firmware
+     /s : Silent mode
+     /f : Force update firmware
+-- Silent FW version check by command :
+     1. Connect dock to PC/NB;
+     2. Following the above "Download Docking FW Package" intorduction
+     3. [File Located folder]\usbcg2dkfw*.exe /verysilent /v
+     4. FW version information will be auto created into the log file: folder path.
+     5. Return code
+            0: Checking version successfully, firmware update is not needed (dock's firmware is equal to or newer than package's).
+            1: Checking version successfully, firmware update is needed (dock's firmware is older than package's).
+           -1: Checking version failed due to dock not found or other unknown reason.
+            0x7001: Checking version failed due to failure on Audio chip.
+            0x7002: Checking version failed due to failure on PD chip.
+            0x7004: Checking version failed due to failure on BB chip.
+            0x7008: Checking version failed due to failure on DP chip.
+            0x7010: Checking version failed due to failure on Hub chip.
+
+-- Silent update by command :
+     1. Connect dock to PC/NB;
+     2. Following the above "Download Docking FW Package" intorduction
+     3. [File Located folder]\usbcg2dkfw*.exe /verysilent /u
+     4. Return code
+           0: Updating version successfully.
+           1: Did not start updating process due to firmware version is newer or equal.
+          -1: Updating version failed due to dock not found or other unknown reason.
+           0x8001: The update failed due to failure on Audio chip.
+           0x8002: The update failed due to failure on PD/BB chip.
+           0x8004: The update failed due to failure on DP chip.
+           0x8008: The update failed due to failure on Hub chip.
+
+-- Auto create log file into directory
+
+
+-- Force update FW even dock FW is newer than the FW tool content or equal.
+           usbcg2dkfw*.exe /u /f /verysilent
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+Release   	    Firmware   	Rev   Issue Date
+--------   	   --------- 	---   ----------
+usbcg2dkfw1120_2  1.1.20        02    2023-03-09
+usbcg2dkfw1118_2  1.1.18        02    2022-09-14
+usbcg2dkfw1116_5  1.1.16        05    2022-04-26
+usbcg2dkfw1113_2  1.1.13        02    2021-12-17
+wldcgt09  	  1.0.8.03231   09    2021-03-23
+wldcgt08 	  1.0.6.06161   08    2020-06-16
+wldcgt06  	  1.0.5.03171   06    2020-03-17
+wldcgt03  	  1.0.3.08281   03    2019-08-28
+wldcgt02     	  1.0.2.07081   02    2019-07-08
+wldcgt01 	  1.0.1.05201   01    2019-05-20
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+
+Summary of Changes
+  Where: <   >        Package version
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+Where: <v1.1.20> (usbcg2dkfw1120_2)       Revision : 03
+-(New)2023/10/27 add support for
+X13 AMD Gen 4(#21J4)	
+X13 AMD Gen 4(#21J3)	
+X13 Gen 4(#21EY)	
+X13 Gen 4(#21EX)	
+X13 Yoga Gen 4(#21F2)	
+X13 Yoga Gen 4(#21F3)	
+ThinkPad Z16 AMD Gen 2(#21JY)	
+ThinkPad Z16 AMD Gen 2(#21JX)	
+ThinkPad Z13 AMD Gen 2(#21JW)	
+ThinkPad Z13 AMD Gen 2(#21JV)
+
+Where: <v1.1.20> (usbcg2dkfw1120_2)       Revision : 02
+-(New)2022/08/25 add support for
+13w Yoga(#82S1)
+13w Yoga(#82S2)
+Z13 Gen 1(#21D3)
+Z13 Gen 1(#21D2)
+Z16 Gen 1(#21D5)
+Z16 Gen 1(#21D4)
+X1 Carbon Gen 10(#21CC)
+X1 Carbon Gen 10(#21CB)
+X1 Yoga Gen 7(#21CE)
+X1 Yoga Gen 7(#21CD)
+X13 Gen 3(#21BQ)
+X13 Gen 3(#21BN)
+X1 Nano G2(#21E9)
+X1 Nano G2(#21E8)
+X1 Extreme Gen 5(#21DF)
+X1 Extreme Gen 5(#21DE)
+E14 AMD Gen3(#20YF)
+E14 AMD Gen3(#20YE)
+E14 AMD Gen3(#20YD)
+E14 AMD Gen3(#20Y7)
+E15 AMD Gen3(#20YK)
+E15 AMD Gen3(#20YJ)
+E15 AMD Gen3(#20YH)
+E15 AMD Gen3(#20YG)
+E14 AMD Gen 4(#21EC)
+E14 AMD Gen 4(#21EB)
+E15 AMD Gen 4(#21EE)
+E15 AMD Gen 4(#21ED)
+E14 Gen 4(#21E4)
+E14 Gen 4(#21E3)
+E15 Gen 4(#21E7)
+E15 Gen 4(#21E6)
+T14 Gen 3(#21AJ)
+T14 Gen 3(#21AH)
+T14s Gen 3(#21BS)
+T14s Gen 3(#21BR)
+T16 Gen 1 AMD(#21CJ)
+T16 Gen 1 AMD(#21CH)
+T14 Gen 3 AMD(#21CG)
+T14 Gen 3 AMD(#21CF)
+T16 Gen 1(#21BW)
+T16 Gen 1(#21BV)
+P16s Gen 1(#21BU)
+P16s Gen 1(#21BT)
+P14s Gen 3(#21AL)
+P14s Gen 3(#21AK)
+P16s Gen 1 AMD(#21CL)
+P16s Gen 1 AMD(#21CK)
+P1 Gen 5(#21DD)
+P1 Gen 5(#21DC)
+P16(#21D7)
+P16(#21D6)
+ThinkBook 16p G2 ACH(#20YM)
+L13 Clam AMD G3(#21BA)
+L13 Clam AMD G3(#21B9)
+L13 Yoga AMD G3(#21BC)
+L13 Yoga AMD G3(#21BB)
+L14 AMD Gen 3(#21C6)
+L14 AMD Gen 3(#21C5)
+L15 AMD Gen 3(#21C8)
+L15 AMD Gen 3(#21C7)
+300w Gen4(#82VN)
+300w Gen4(#82VM)
+X1 Fold 16 G1(#21ES)
+X1 Fold 16 G1(#21ET)
+X1 Yoga G8(#21HR)
+X1 Yoga G8(#21HQ)
+X1 Carbon G11(#21HN)
+X1 Carbon G11(#21HM)
+X1 Nano G3(#21K2)
+X1 Nano G3(#21K1)
+T14 AMD Gen 4(#21K3)
+T14 AMD Gen 4(#21K4)
+T16 AMD Gen 2(#21K7)
+T16 AMD Gen 2(#21K8)
+T16 Gen 2(#21HH)
+T16 Gen 2(#21HJ)
+T14 Gen 4(#21HD)
+T14 Gen 4(#21HE)
+P14s AMD Gen 4(#21K5)
+P14s AMD Gen 4(#21K6)
+P16s AMD Gen 2(#21K9)
+P16s AMD Gen 2(#21KA)
+P16 Gen 2(#21FA)
+P16 Gen 2(#21FB)
+P14s Gen 4(#21HF)
+P14s Gen 4(#21HG)
+P16s Gen 2(#21HK)
+P16s Gen 2(#21HL)
+P15v AMD G3(#21EN)
+P15v AMD G3(#21EM)
+P14s AMD G3(#21J6)
+P14s AMD G3(#21J5)
+L13 Clam G4(#21FG)
+L13 Clam G4(#21FH)
+L13 Yoga G4(#21FK)
+L13 Yoga G4(#21FJ)
+L15 Gen 4(#21H4)
+L15 Gen 4(#21H3)
+L14 Gen 4(#21H2)
+L14 Gen 4(#21H1)
+L15 AMD Gen4(#21H8)
+L15 AMD Gen4(#21H7)
+L14 AMD Gen4(#21H6)
+L14 AMD Gen4(#21H5)
+
+Where: <v1.1.20> (usbcg2dkfw1120_2)       Revision : 01
+-(New)2022/08/25 add support for
+X13 Gen 3 AMD(#21CM,21CN)      
+T14s Gen 3 AMD(#21CQ,21CR)
+
+
+<usbcg2dkfw1120_2> 1.1.20
+-	Audio codec FW ver:49-0E-43
+	PD billboard version: R0.1.0.30
+        PD CCG4 version: 0.0.37
+        DP HUB FW Ver:5.07.001
+	1.> Fixed the monitor EDID corrupted issue causing no audio option on that monitor
+	2.> Fixed the HDCP1.4 authentication issue in MST cascade mode
+	3.> Disable the HDCP for HDMI to VGA dongle
+	4.> Fixed the HDR issue with DP2VGA dongle
+        HUB 1 (Q7) FW Ver: 0D24
+        HUB 2 (Q8) FW Ver: 0D23
+
+<usbcg2dkfw1118_2> 1.1.18
+-	Audio codec FW ver:49-0E-43
+	1.> Update MIC EQ
+	PD billboard version: R0.1.0.30
+        PD CCG4 version: 0.0.37
+        DP HUB FW Ver:5.06.004
+	1.> Change the DPRX DSC capability report policy, passthrough downstream DSC monitor capability only and only if there is no other non-DSC monitor connected
+	2.> Handles the DFP MST DOWN_REP and UP_REQ HPD IRQ directly in IRQ handling function, avoid race condition happened between IRQ and polling
+	3.> Fix the bug that handles the DFP MST link as virtual MST link when it is hot plug in as second monitor
+	4.> Add GUID2 support on virtual DPCD space
+	5.> Recognize the all zero value content VSC packet as valid packet in case the GPU output 6bpc stream with VSC packet being enabled
+	6.> TBT4 dual VMM MST hub cascade special handling, request HBR2 to GPU if there is only single monitor connected on the second MST hub 
+	7.> B1 chip special fix, check DFP HDCP capability after HDCP is initialized		
+        HUB 1 (Q7) FW Ver: 0D24
+        HUB 2 (Q8) FW Ver: 0D23
+
+<usbcg2dkfw1116_5> 1.1.16
+-	Audio codec FW ver:49-0E-42
+	1.> FW requests for HS recording noise issue on LDC-G2/LDA-KP DOCK - Update MIC EQ. 
+        PD billboard version: R0.1.0.30
+        PD CCG4 version: 0.0.37
+        DP HUB FW Ver:5.06.001
+	1.> Separate the FW configuration for VSC packet and DP2HDMI DSC support
+	2.> Fix the third EDID block of the monitor may be corrupted when connect to a SST only source
+	3.> DPTX SST DSC passthrough enhancement, make sure NO_VID bit in VBID is cleared at beginning of the frame, applies to B0/B1 only
+	4.> DPTX SST DSC passthrough enhancement, re-check DSC_EN bit of DPCD 0x160 after link training, applies to B0/B1 only
+	5.> Avoid doing double link training with LG5K monitor on B0/B1 only
+	6.> Disable the FTG mode for Mxxx based DP2HDMI convert chip to make B0/B1 chip firmware has same setting as A2.		
+        HUB 1 (Q7) FW Ver: 0D24
+        HUB 2 (Q8) FW Ver: 0D23
+
+<usbcg2dkfw1113_2> 1.1.13
+-	Audio codec FW ver:49-0E-41
+	1.> Change Audio FW feature from UAC 1.0 to UAC 2.0 (Use Microsoft inbox Audio Driver and no need to install Audio Driver.).
+        2.> Change Audio Device PID from 0xA396 to 0x30D1. 
+        PD billboard version: R0.1.0.30
+        PD CCG4 version: 0.0.37
+        DP HUB FW Ver:5.06.000		
+        HUB 1 (Q7) FW Ver: 0D24
+        HUB 2 (Q8) FW Ver: 0D23
+
+<wldcgt09> 1.0.8.03231
+-	Audio codec FW ver:49-0E-14
+        PD billboard version: R0.1.0.30
+        PD CCG4 version: 0.0.37
+        DP HUB FW Ver:5.05.006
+	1.> Fix the DP2VGA dongle image flashing issue on B1 chip when DSC is enabled
+	2.> Fix the LG5K monitor 5K30Hz no display issue on A2 chip when DSC is enabled
+	3.> Fix the no display regression issue with DP1.4 MST monitor
+	4.> Always enable FTG output for DP output on B1 chip
+	5.> Fix the 8K30Hz DP output no display regression issue when source enabled FEC function
+	6.> Fix the issue that some 2560x1440@120Hz timing on DP output can't show out display issue on A2 chip
+	7.> Add firmware configuration control feature, always work at SST mode when single monitor connected, switch to MST mode if two or more monitor connected		
+        HUB 1 (Q7) FW Ver: 0D24
+        HUB 2 (Q8) FW Ver: 0D23
+
+<wldcgt08> 1.0.6.06161
+-	Audio codec FW ver:49-0E-14
+        PD billboard version: R0.1.0.30
+        PD CCG4 version: 0.0.37
+        DP HUB FW Ver:5.05.000
+ 	1.> Fix the issue that remote DPCD read of MST DP monitor mixed up with virtual DPCD
+ 	2.> Support disabling the firmware update from aux channel, firmware configuration based setting
+ 	3.> Fix the regression issue that no audio with certain large resolution monitor with AMD source
+ 	4.> change the DPTX buffer setting for higher VSync refresh rate > 125Hz resolution
+ 	5.> change the DPTX buffer setting for 2560x1440@24Hz
+ 	6.> change the DPTX clock tuning mode for downstream DP branch device		
+        HUB 1 (Q7) FW Ver: 0D24
+        HUB 2 (Q8) FW Ver: 0D23
+
+<wldcgt06> 1.0.5.03171
+-	Audio codec FW ver:49-0E-14
+        PD billboard version: R0.1.0.30
+	1.> Write SN number informaation into BillBoard.
+        PD CCG4 version: 0.0.34
+	1.> Include P series Server Platform Dynamic PDO case to avoid Alternate Mode communication confliction.
+        DP HUB FW Ver:5.04.005
+ 	1.> Update DSC setting
+ 	2.> Update the DisplayExpand setting for SST source only, recover the HBlank based on the active monitor EDID
+ 	3.> Fix the compatible issue with certain monitor, which report DPCD1.2 revision, but can't accept GUID (DPCD 0x3x) write.
+     	avoid set the GUID to downstream monitor DPCD 0x3x if it does not support MST
+ 	4.> Enable DSC function. 		
+        HUB 1 (Q7) FW Ver: 0D24
+        HUB 2 (Q8) FW Ver: 0D23
+	1.> USB 2.0 UFP implement dynamic change for TBT disconnect issue.
+	2.> Change container ID to"4917CBDB 9CBA 49D7 BC6E 72B0BBA14A7F"
+
+
+<wldcgt03> 1.0.3.03281
+-	Audio codec FW ver:49-0E-14
+	1.> Change terminal type to Headphone/Microphones.
+	2.> Correct playback terminal type to Headphones.
+        PD billboard version: R0.1.0.27
+        PD CCG4 version: 0.0.31
+	1.> Fix Lenovo WOL event abonormal sending issue from dock side by adding criterias to enalbe WOL feature only after LAN_PWR got enabled and Lenovo Alt-mode got entered.
+	2.> Fix Dynamic PDO reporting issue while performing DS re-plug during Un-Docked state.
+	3.> Fix VLA leakage issue by turn-off DS port phy and related control pin to VLA during S4/S5 state.
+        DP HUB FW Ver:5.04.002
+ 	1.> Disabled DSC function
+        HUB 1 (Q7) FW Ver: 0CD4
+        HUB 2 (Q8) FW Ver: 0CD3
+
+<wldcgt02> 1.0.2.07081
+-	Audio codec FW ver:49-0E-07
+	1.> Fix USB controller resources
+	2.> Resize the packet size to sample rate 48k
+        PD billboard version: R0.1.0.27
+        PD CCG4 version: 0.0.29
+	1.> Only support Dynamic PDO feature under System S0 stage condition. Also, Force to report 20V@3A out of S0 stage even DS connected. 
+        DP HUB FW Ver:5.04.001
+ 	1.> Fixed HDMI output DSC decoded image left shift one line issue. 		
+        HUB 1 (Q7) FW Ver: 0CD4
+        HUB 2 (Q8) FW Ver: 0CD3
+
+<wldcgt01> 1.0.1.05201
+-	Audio codec FW ver:49-0E-06
+	1.> Add the support of 2 partition.
+	2.> Fix “da da” noise.
+        PD billboard version: R0.1.0.27
+        PD CCG4 version: 0.0.28
+	1.> Only support Dynamic PDO feature under System S0 stage condition. Also, Force to report 20V@3A out of S0 stage even DS connected. 
+        DP HUB FW Ver:5.03.012
+ 	1.> Fixed the regression issue that no display on TX1 and TX2 TMDS (HDMI or DVI) output
+        HUB 1 (Q7) FW Ver: 0CD4
+        HUB 2 (Q8) FW Ver: 0CD3
+	1.> Delay PWREN for phison 2307 behavior.
+
+--------------------------------------------------------------------------------
+
+Support models  
+X13 AMD Gen 4(#21J4)	
+X13 AMD Gen 4(#21J3)	
+X13 Gen 4(#21EY)	
+X13 Gen 4(#21EX)	
+X13 Yoga Gen 4(#21F2)	
+X13 Yoga Gen 4(#21F3)	
+ThinkPad Z16 AMD Gen 2(#21JY)	
+ThinkPad Z16 AMD Gen 2(#21JX)	
+ThinkPad Z13 AMD Gen 2(#21JW)	
+ThinkPad Z13 AMD Gen 2(#21JV)
+
+
+13w Yoga(#82S1)
+13w Yoga(#82S2)
+Z13 Gen 1(#21D3)
+Z13 Gen 1(#21D2)
+Z16 Gen 1(#21D5)
+Z16 Gen 1(#21D4)
+X1 Carbon Gen 10(#21CC)
+X1 Carbon Gen 10(#21CB)
+X1 Yoga Gen 7(#21CE)
+X1 Yoga Gen 7(#21CD)
+X13 Gen 3(#21BQ)
+X13 Gen 3(#21BN)
+X1 Nano G2(#21E9)
+X1 Nano G2(#21E8)
+X1 Extreme Gen 5(#21DF)
+X1 Extreme Gen 5(#21DE)
+E14 AMD Gen3(#20YF)
+E14 AMD Gen3(#20YE)
+E14 AMD Gen3(#20YD)
+E14 AMD Gen3(#20Y7)
+E15 AMD Gen3(#20YK)
+E15 AMD Gen3(#20YJ)
+E15 AMD Gen3(#20YH)
+E15 AMD Gen3(#20YG)
+E14 AMD Gen 4(#21EC)
+E14 AMD Gen 4(#21EB)
+E15 AMD Gen 4(#21EE)
+E15 AMD Gen 4(#21ED)
+E14 Gen 4(#21E4)
+E14 Gen 4(#21E3)
+E15 Gen 4(#21E7)
+E15 Gen 4(#21E6)
+T14 Gen 3(#21AJ)
+T14 Gen 3(#21AH)
+T14s Gen 3(#21BS)
+T14s Gen 3(#21BR)
+T16 Gen 1 AMD(#21CJ)
+T16 Gen 1 AMD(#21CH)
+T14 Gen 3 AMD(#21CG)
+T14 Gen 3 AMD(#21CF)
+T16 Gen 1(#21BW)
+T16 Gen 1(#21BV)
+P16s Gen 1(#21BU)
+P16s Gen 1(#21BT)
+P14s Gen 3(#21AL)
+P14s Gen 3(#21AK)
+P16s Gen 1 AMD(#21CL)
+P16s Gen 1 AMD(#21CK)
+P1 Gen 5(#21DD)
+P1 Gen 5(#21DC)
+P16(#21D7)
+P16(#21D6)
+ThinkBook 16p G2 ACH(#20YM)
+L13 Clam AMD G3(#21BA)
+L13 Clam AMD G3(#21B9)
+L13 Yoga AMD G3(#21BC)
+L13 Yoga AMD G3(#21BB)
+L14 AMD Gen 3(#21C6)
+L14 AMD Gen 3(#21C5)
+L15 AMD Gen 3(#21C8)
+L15 AMD Gen 3(#21C7)
+300w Gen4(#82VN)
+300w Gen4(#82VM)
+X1 Fold 16 G1(#21ES)
+X1 Fold 16 G1(#21ET)
+X1 Yoga G8(#21HR)
+X1 Yoga G8(#21HQ)
+X1 Carbon G11(#21HN)
+X1 Carbon G11(#21HM)
+X1 Nano G3(#21K2)
+X1 Nano G3(#21K1)
+T14 AMD Gen 4(#21K3)
+T14 AMD Gen 4(#21K4)
+T16 AMD Gen 2(#21K7)
+T16 AMD Gen 2(#21K8)
+T16 Gen 2(#21HH)
+T16 Gen 2(#21HJ)
+T14 Gen 4(#21HD)
+T14 Gen 4(#21HE)
+P14s AMD Gen 4(#21K5)
+P14s AMD Gen 4(#21K6)
+P16s AMD Gen 2(#21K9)
+P16s AMD Gen 2(#21KA)
+P16 Gen 2(#21FA)
+P16 Gen 2(#21FB)
+P14s Gen 4(#21HF)
+P14s Gen 4(#21HG)
+P16s Gen 2(#21HK)
+P16s Gen 2(#21HL)
+P15v AMD G3(#21EN)
+P15v AMD G3(#21EM)
+P14s AMD G3(#21J6)
+P14s AMD G3(#21J5)
+L13 Clam G4(#21FG)
+L13 Clam G4(#21FH)
+L13 Yoga G4(#21FK)
+L13 Yoga G4(#21FJ)
+L15 Gen 4(#21H4)
+L15 Gen 4(#21H3)
+L14 Gen 4(#21H2)
+L14 Gen 4(#21H1)
+L15 AMD Gen4(#21H8)
+L15 AMD Gen4(#21H7)
+L14 AMD Gen4(#21H6)
+L14 AMD Gen4(#21H5)
+X1 Fold G1(#20RK,20RL)
+L13 Yoga AMD Gen2(#21AD,21AE)
+L13 Clam AMD Gen2(#21AB,21AC)
+IP 5 Pro 14ITL6(#82L3)
+IP 5 15ITL05(#82FG)
+Slim 9 14ITL5(#82D2)
+S540-13ARE(#82DL)
+Slim 7 14ARE05(#82A5)
+S540-13IML(#81XA)
+Yoga 6 13ALC6(#82ND)
+Yoga Duet 7 13ITL6(#82MA)
+Yoga Slim 7 13ACN5(#82CY)
+Yoga Slim 7 Pro 14IHU5(#82NC)
+Yoga Slim 7 13ITL5(#82CU)
+Yoga Slim 7 Pro 14ARH5(#82LA)
+Yoga Slim 9 14ITL5(#82D1)
+YogaS7Carbon13ITL5(#82EV)
+Yoga Slim 7 Pro 14ITL5(#82FX)
+Yoga Duet IML 2020(#82E9)
+Yoga Duet7 13IML05(#82AS)
+Yoga Slim7 14ARE05(#82A2)
+Yoga C640-13IML(#81UE)
+Yoga C640-13IMLLTE(#81XL)
+Lenovo 100e Chromebook 2nd Gen AST(#82CD,82LS)
+Lenovo 300e Chromebook 2nd Gen AST(#82CE)
+ThinkPad 11e Yoga Gen 6(#20SF,20SE)
+Lenovo 14e Winbook(#81MQ)
+ThinkPad 11e 5th Gen(#20LQ, 20LR)
+ThinkPad Yoga 11e 5th Gen(#20LM, 20LN)
+X1 Extreme Gen4(#20Y5,20Y6)
+P1 Gen4(#20Y3,20Y4)
+ThinkBook 13x ITG(#20WJ)
+ThinkBook 13s G3 ACN(#20YA)
+YG Duet 7 13ITL6 L(#82Q7)
+X13 AMD Gen 2(#20XH,20XJ)
+L15 AMD Gen2(#20X7,20X8)	
+L14 AMD Gen2(#20X5,20X6)
+T15p Gen2(#21A7,21A8)
+P15v Gen2(#21A9,21AA)
+ThinkBook Plus G2 ITG(#20WH)
+Lenovo 500w Gen3(#82J3,82J4)
+ThinkBook 14 G3 ACL(#21A2)
+T14s AMD Gen2(#20XF,20XG)
+P14s AMD Gen 2(#21A0,21A1)
+Lenovo Tablet 10(#20L3,20L4)
+ThinkPad X1 Tablet Gen 3(#20KJ,20KK)
+E15 Gen 2(#20TD,20TE)
+E14 Gen 2(#20TA,20TB)
+E15 Gen2 AMD(#20T8,20T9)
+E14 Gen2 AMD(#20T6,20T7)
+E15(#20RD,20RE)
+E14(#20RA,20RB)
+E595(#20NF)
+E495(#20NE)
+E590(#20NB,20NC)
+E490(#20N8,20N9)
+C13 Yoga Gen 1(#20UX,20UY)
+P52s(#20LB,20LC)
+P14s Gen 2(#20VX,20VY)
+P15s Gen 2(#20W6,20W7)
+P14s AMD G1(#20Y1,20Y2)
+P15v Gen 1(#20TQ,20TR)
+P1 Gen 3(#20TH,20TJ)
+P15 Gen 1(#20ST,20SU)
+P17 Gen 1(#20SN,20SQ)
+P14s Gen 1(#20S4,20S5)
+P15s Gen 1(#20T4,20T5)
+P73(#20QR,20QS)
+P43s(#20RH,20RJ)
+P53(#20QN,20QQ)
+P1 Gen 2(#20QT,20QU)
+P53s(#20N6,20N7)
+T470s(#20HF,20HG,20JS,20JT)
+T570(#20H9,20HA,20JW,20JX)
+T470(#20HD,20HE,20JM,20JN#)
+T14s Gen2(#20WM,20WN)
+T14 Gen 2(HC)(#20W2,20W3)
+T14 Gen 2(#20W0,20W1)
+T15 Gen 2(#20W4,20W5)
+T15g Gen 1(#20UR,20US)
+T15p Gen 1(#20TN,20TM)
+T14s AMD Gen 1(#20UH,20UJ)
+T14 AMD Gen 1(#20UD,20UE)
+T15 Gen 1(#20S6,20S7)
+T14 Gen 1(HC)(#20S2,20S3)
+T14 Gen 1(#20S0,20S1)
+T14s Gen 1(#20T0,20T1)
+T490 CML(#20RY,20RX)
+T490(HC)(#20Q9,20QH)
+T495s(#20QJ,20QK)
+T495(#20NJ,20NK)
+T490s(#20NX,20NY)
+T490(#20N2,20N3)
+T590(#20N4,20N5)
+T580(#20L9,20LA)
+T480(#20L5,20L6)
+T480s(#20L7,20L8)
+T14 AMD Gen2(#20XK,20XL)
+L480(#20LS,20LT)
+L580(#20LW,20LX)
+L380(#20M5,20M6)
+L380 Yoga(#20M7, 20M8)
+L390(#20NR,20NS)
+L390 Yoga(#20NT,20NU)
+L490(#20Q5,20Q6)
+L590(#20Q7,20Q8)
+L13 Yoga(#20R5,20R6)
+L13(#20R3,20R4)
+L15 Gen1(#20U3,20U4)
+L14 Gen1(#20U1,20U2)
+L15 AMD Gen 1(#20U7,20U8)
+L14 AMD Gen 1(#20U5,20U6)
+L13 Yoga G2(#20VK,20VL)
+L13 Clam G2(#20VH,20VJ)
+L14 Gen2(#20X1,20X2)
+L15 Gen2(#20X3,20X4)
+X380 Yoga(#20LH, 20LJ,20LK)
+X390 Yoga(#20NN,20NQ)
+A485(#20MU,20MV)
+A285(#20MW,20MX)
+X270(#20HM,20HN,20K5,20K6)
+X1 Carbon 6th Gen(#20KG,20KH)
+X280(#20KE,20KF) 
+X1 Yoga 3rd Gen(#20LD,20LE,20LF,20LG)
+X390(#20Q0,20Q1,20SC,20SD)
+X395(#20NL,20NM)
+X1 Yoga 4th Gen(#20QF,20QG,20SA,20SB)
+X1 Carbon 7th Gen(#20QD,20QE,20R1,20R2)
+X1 Extreme Gen 2(#20QV,20QW)
+X1 Carbon 8th Gen(#20U9,20UA)
+X1 Yoga 5th Gen(#20UB,20UC)
+X13 Yoga Gen 1(#20SX,20SY)
+X13 Gen 1(#20T2,20T3)
+X13 AMD Gen 1(#20UF,20UG)
+X1 Extreme Gen 3(#20TL,20TK)
+X1 Nano Gen 1(#20UN,20UQ)
+X1 Titanium Yoga Gen 1(#20QA,20QB)
+X12 Detachable Gen 1(#20UW,20UV)
+X1 Carbon Gen 9(#20XW,20XX)
+X1 Yoga Gen 6(#20XY,20X0)
+X13 Gen 2(#20WK,20WL)
+X13 Yoga Gen2(#20W8,20W9)
+ThinkPad11e Yoga Gen 6(20SE,20SF)
+ThinkPad S2 Yoga 5th (20R8)
+ThinkPad S2 5th Gen(20R7)
+ThinkPad R14(20RC)
+ThinkPad S3 Gen2(20RG)
+ThinkPad S2 4th Gen(20NV)
+ThinkPad S2 Yoga 4th Gen(20NW)
+ThinkPad R490(20NA)
+ThinkPad R590(20ND)
+ThinkPad E490s(20NG,20QC)
+ThinkBook Plus(#20TG)
+ThinkBook 14-IIL(#20SL)
+ThinkBook 15-IIL(#20SM)
+ThinkBook 14-IML(#20RV)
+ThinkBook 15-IML(#20RW)
+ThinkBook 13s-IML(#20RR)
+ThinkBook 14s-IML(#20RS)
+ThinkBook 14s-IWL(#20RM)
+ThinkBook 13s-IWL(#20R9)
+ThinkBook 13s G2 ITL(#20V9)
+ThinkBook 14s G2 ITL(#20VA)
+ThinkBook 13s G2 ARE(#20WC)
+ThinkBook 14 G2 ITL(#20VD)
+ThinkBook 15 G2 ITL(#20VE)
+ThinkBook 15 G3 ACL(#21A4)
+X13 Yoga Gen 3(#21AW,21AX)
+L13 Yoga G3(#21B5,21B6) 
+L13 Clam G3(#21B3,21B4) 
+L15 Gen 3((#21C3,21C4) 
+L14 Gen 3(#21C1,21C2)
+T15p Gen 3(#21DA,21DB)
+P15v Gen 3(#21D8,21D9)
+X13 Gen 3 AMD(#21CM,21CN)      
+T14s Gen 3 AMD(#21CQ,21CR)
+
+ThinkPad USB-C Dock Gen2(40AS)
+
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo and ThinkPad are registered trademarks of Lenovo.
+
+* Microsoft, Windows and Windows Vista are registered trademarks of Microsoft
+  Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.
